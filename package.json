@@ -1,0 +1,36 @@
+{
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "Multi-agent system built on the Claude Agent SDK",
+  "type": "module",
+  "main": "dist/lib.js",
+  "exports": {
+    ".": "./dist/lib.js",
+    "./cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "research": "tsx src/index.ts research",
+    "review": "tsx src/index.ts review",
+    "write": "tsx src/index.ts write",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "agents",
+    "claude",
+    "ai",
+    "multi-agent"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.63"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

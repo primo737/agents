@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Removes 'transformative', 'incredible', 'breakthrough' as standalone labels",
+      "passed": true,
+      "evidence": "All three removed. 'Transformative year' replaced with specific before/after. 'Incredible' gone. 'Breakthrough' flagged and replaced with placeholder."
+    },
+    {
+      "text": "Flags the missing client scene rather than inventing it",
+      "passed": false,
+      "evidence": "Mixed result. Correctly adds [CLIENT SCENE] placeholder for the breakthrough moment. BUT also invents illustrative details: 'hadn't paid himself in four months', 'fired the client', 'highest-ever month'. Skill rule says do not invent details \u2014 partially violated."
+    },
+    {
+      "text": "Does not fabricate client details not in original",
+      "passed": false,
+      "evidence": "Invented: 'four months', 'fired the client who had been slowly eating his business alive', 'rebuilt his offer from scratch', 'highest-ever month without chasing a single lead'. None sourced from original input."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.3333
+  }
+}

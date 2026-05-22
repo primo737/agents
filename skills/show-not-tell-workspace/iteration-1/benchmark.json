@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "skill_name": "show-not-tell",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-05-12T03:19:01Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "total": 4,
+        "time_seconds": 27.0,
+        "tokens": 26028,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Removes generic telling labels (incredibly hard, sacrifices, bad decisions)",
+          "passed": true,
+          "evidence": "None of those labels appear. Replaced with: 'two decisions I would spend the next year untangling', 'they hire fast because desperate for company', 'say yes to bad partnerships'"
+        },
+        {
+          "text": "Contains at least one specific concrete scene or image",
+          "passed": true,
+          "evidence": "Specific restaurant scene: 'drove to a restaurant alone, ate at the bar'. Six-figure deal closing with no one to text. Three months of chasing a deal named."
+        },
+        {
+          "text": "Does not invent specific facts not in original",
+          "passed": false,
+          "evidence": "Invented: 'three months' of deal-chasing, the restaurant scene, 'friends stopped following up around year two'. None sourced from original. Skill rule says ask for detail rather than invent."
+        },
+        {
+          "text": "Ends with 'How does this land?'",
+          "passed": false,
+          "evidence": "Output ends with 'Learn to tell the difference before the deal is signed.' The skill's output format rule was not followed."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 25.8,
+        "tokens": 26021,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Removes generic quality labels (passionate, resilience, deeply committed, tremendous adversity, significant impact)",
+          "passed": true,
+          "evidence": "All five labels removed entirely. No label substituted for another label."
+        },
+        {
+          "text": "Shows a specific action or behavior",
+          "passed": true,
+          "evidence": "'sitting inside the problems with them', 'walk into a broken sales process...find what's actually stuck within an hour' \u2014 both are concrete actions, not qualities."
+        },
+        {
+          "text": "Uses defensible credential numbers (1,000+ trained, $10M+ revenue impact)",
+          "passed": true,
+          "evidence": "'more than 1,000 founders', '$10M in client revenue' \u2014 matches verified figures from CLAUDE.md."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.3333,
+        "passed": 1,
+        "failed": 2,
+        "total": 3,
+        "time_seconds": 30.9,
+        "tokens": 26202,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Removes 'transformative', 'incredible', 'breakthrough' as standalone labels",
+          "passed": true,
+          "evidence": "All three removed. 'Transformative year' replaced with specific before/after. 'Incredible' gone. 'Breakthrough' flagged and replaced with placeholder."
+        },
+        {
+          "text": "Flags the missing client scene rather than inventing it",
+          "passed": false,
+          "evidence": "Mixed result. Correctly adds [CLIENT SCENE] placeholder for the breakthrough moment. BUT also invents illustrative details: 'hadn't paid himself in four months', 'fired the client', 'highest-ever month'. Skill rule says do not invent details \u2014 partially violated."
+        },
+        {
+          "text": "Does not fabricate client details not in original",
+          "passed": false,
+          "evidence": "Invented: 'four months', 'fired the client who had been slowly eating his business alive', 'rebuilt his offer from scratch', 'highest-ever month without chasing a single lead'. None sourced from original input."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 19.3,
+        "tokens": 23929,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Removes generic telling labels (incredibly hard, sacrifices, bad decisions)",
+          "passed": true,
+          "evidence": "Labels removed. Replaced with: 'close a six-figure deal, hang up the phone, sit in a silent office with no one to call', 'Skipped dinners, missed weddings'"
+        },
+        {
+          "text": "Contains at least one specific concrete scene or image",
+          "passed": true,
+          "evidence": "Strong scene: silent office after closing deal, no one to call. Physical isolation made concrete."
+        },
+        {
+          "text": "Does not invent specific facts not in original",
+          "passed": false,
+          "evidence": "Invented: 'Skipped dinners, missed weddings, said soon to everyone I loved' \u2014 none of these were in the original. Baseline fabricates illustrative details freely."
+        },
+        {
+          "text": "Ends with 'How does this land?' (N/A for baseline)",
+          "passed": true,
+          "evidence": "N/A \u2014 this assertion only applies to with-skill runs. Marking pass to avoid penalizing baseline."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 23.4,
+        "tokens": 23855,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Removes generic quality labels (passionate, resilience, deeply committed, tremendous adversity, significant impact)",
+          "passed": true,
+          "evidence": "All removed. 'Resilience' replaced with implied learning. 'Passionate' replaced with the scene of sitting with a founder in crisis."
+        },
+        {
+          "text": "Shows a specific action or behavior",
+          "passed": true,
+          "evidence": "'sat across from a founder whose business was three weeks from collapse' \u2014 strong concrete scene."
+        },
+        {
+          "text": "Uses defensible credential numbers (1,000+ trained, $10M+ revenue impact)",
+          "passed": true,
+          "evidence": "'more than a thousand times', '$10 million in revenue impact' \u2014 correct figures."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.3333,
+        "passed": 1,
+        "failed": 2,
+        "total": 3,
+        "time_seconds": 14.3,
+        "tokens": 23616,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Removes 'transformative', 'incredible', 'breakthrough' as standalone labels",
+          "passed": true,
+          "evidence": "'Transformative' gone, 'incredible' gone, 'breakthrough' replaced with specific scene. All labels removed."
+        },
+        {
+          "text": "Flags the missing client scene rather than inventing it",
+          "passed": false,
+          "evidence": "Baseline freely invents: '$12,000 package', 'January', 'four months', 'turned away a client'. No flagging of invented content. This is the key differentiator from the skill."
+        },
+        {
+          "text": "Does not fabricate client details not in original",
+          "passed": false,
+          "evidence": "Fabricated: '$12,000', 'January', 'four months', 'turned away a client'. All invented without sourcing. Baseline treats filling gaps with invention as acceptable."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.6111,
+        "stddev": 0.347,
+        "min": 0.3333,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 27.9,
+        "stddev": 2.6665,
+        "min": 25.8,
+        "max": 30.9
+      },
+      "tokens": {
+        "mean": 26083.6667,
+        "stddev": 102.5394,
+        "min": 26021,
+        "max": 26202
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.6944,
+        "stddev": 0.3368,
+        "min": 0.3333,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 19.0,
+        "stddev": 4.5574,
+        "min": 14.3,
+        "max": 23.4
+      },
+      "tokens": {
+        "mean": 23800.0,
+        "stddev": 163.5879,
+        "min": 23616,
+        "max": 23929
+      }
+    },
+    "delta": {
+      "pass_rate": "-0.08",
+      "time_seconds": "+8.9",
+      "tokens": "+2284"
+    }
+  },
+  "notes": []
+}

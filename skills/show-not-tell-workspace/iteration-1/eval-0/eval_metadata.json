@@ -1,0 +1,27 @@
+{
+  "eval_id": 0,
+  "eval_name": "book-caption-labels-to-scenes",
+  "prompt": "Apply show not tell to a book promo caption heavy with labels like 'hardest thing', 'worked incredibly hard', 'bad decisions', 'lonely success'",
+  "assertions": [
+    {
+      "id": "no-telling-labels",
+      "name": "Removes generic telling labels",
+      "description": "Output should not contain 'incredibly hard', 'hard work', 'sacrifices', 'bad decisions' as standalone labels"
+    },
+    {
+      "id": "has-concrete-scene",
+      "name": "Contains at least one specific concrete scene or image",
+      "description": "Output should contain a specific moment, place, action, or sensory detail — not just abstractions"
+    },
+    {
+      "id": "no-invented-facts",
+      "name": "Does not invent specific facts not in the original",
+      "description": "If specific dollar amounts, dates, names, or events appear in the output that weren't in the input, they should be flagged or sourced"
+    },
+    {
+      "id": "ends-how-does-this-land",
+      "name": "Ends with 'How does this land?' (with-skill only)",
+      "description": "Skill instructs output to end with this phrase — baseline may not include it"
+    }
+  ]
+}

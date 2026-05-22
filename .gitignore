@@ -1,0 +1,10 @@
+# Runtime logs and session data
+*.log
+sessions/
+logs/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/

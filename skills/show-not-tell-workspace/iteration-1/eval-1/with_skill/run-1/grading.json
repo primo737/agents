@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Removes generic quality labels (passionate, resilience, deeply committed, tremendous adversity, significant impact)",
+      "passed": true,
+      "evidence": "All five labels removed entirely. No label substituted for another label."
+    },
+    {
+      "text": "Shows a specific action or behavior",
+      "passed": true,
+      "evidence": "'sitting inside the problems with them', 'walk into a broken sales process...find what's actually stuck within an hour' \u2014 both are concrete actions, not qualities."
+    },
+    {
+      "text": "Uses defensible credential numbers (1,000+ trained, $10M+ revenue impact)",
+      "passed": true,
+      "evidence": "'more than 1,000 founders', '$10M in client revenue' \u2014 matches verified figures from CLAUDE.md."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}

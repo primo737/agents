@@ -1,0 +1,22 @@
+{
+  "eval_id": 2,
+  "eval_name": "sales-email-flags-missing-scene",
+  "prompt": "Rewrite a sales email intro where the key scene ('breakthrough moment') is referenced but never opened — tests whether skill flags missing detail vs. inventing it",
+  "assertions": [
+    {
+      "id": "removes-label-words",
+      "name": "Removes 'transformative', 'incredible', 'breakthrough' as standalone labels",
+      "description": "These words should either be gone or replaced with specific content that earns them"
+    },
+    {
+      "id": "flags-or-fills-missing-scene",
+      "name": "Handles the missing client scene correctly",
+      "description": "With-skill: should flag the missing scene with a placeholder and ask for detail. Without-skill: may invent details — this is a key differentiator"
+    },
+    {
+      "id": "no-fabricated-specifics",
+      "name": "Does not fabricate client details not in original",
+      "description": "Specific dollar amounts, months, or client actions not present in the original input should not appear without flagging or attribution"
+    }
+  ]
+}

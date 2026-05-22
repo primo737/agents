@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Removes 'transformative', 'incredible', 'breakthrough' as standalone labels",
+      "passed": true,
+      "evidence": "'Transformative' gone, 'incredible' gone, 'breakthrough' replaced with specific scene. All labels removed."
+    },
+    {
+      "text": "Flags the missing client scene rather than inventing it",
+      "passed": false,
+      "evidence": "Baseline freely invents: '$12,000 package', 'January', 'four months', 'turned away a client'. No flagging of invented content. This is the key differentiator from the skill."
+    },
+    {
+      "text": "Does not fabricate client details not in original",
+      "passed": false,
+      "evidence": "Fabricated: '$12,000', 'January', 'four months', 'turned away a client'. All invented without sourcing. Baseline treats filling gaps with invention as acceptable."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.3333
+  }
+}

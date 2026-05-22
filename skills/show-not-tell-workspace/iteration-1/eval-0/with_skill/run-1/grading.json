@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Removes generic telling labels (incredibly hard, sacrifices, bad decisions)",
+      "passed": true,
+      "evidence": "None of those labels appear. Replaced with: 'two decisions I would spend the next year untangling', 'they hire fast because desperate for company', 'say yes to bad partnerships'"
+    },
+    {
+      "text": "Contains at least one specific concrete scene or image",
+      "passed": true,
+      "evidence": "Specific restaurant scene: 'drove to a restaurant alone, ate at the bar'. Six-figure deal closing with no one to text. Three months of chasing a deal named."
+    },
+    {
+      "text": "Does not invent specific facts not in original",
+      "passed": false,
+      "evidence": "Invented: 'three months' of deal-chasing, the restaurant scene, 'friends stopped following up around year two'. None sourced from original. Skill rule says ask for detail rather than invent."
+    },
+    {
+      "text": "Ends with 'How does this land?'",
+      "passed": false,
+      "evidence": "Output ends with 'Learn to tell the difference before the deal is signed.' The skill's output format rule was not followed."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 2,
+    "total": 4,
+    "pass_rate": 0.5
+  }
+}

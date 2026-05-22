@@ -1,0 +1,22 @@
+{
+  "eval_id": 1,
+  "eval_name": "speaker-bio-qualities-to-actions",
+  "prompt": "Rewrite a speaker bio that labels qualities (passionate, resilient, committed) rather than showing them through specific actions",
+  "assertions": [
+    {
+      "id": "removes-quality-labels",
+      "name": "Removes generic quality labels",
+      "description": "Output should not contain 'passionate', 'resilience', 'deeply committed', 'tremendous adversity', 'significant impact' as standalone claims"
+    },
+    {
+      "id": "has-specific-action",
+      "name": "Shows a specific action or behavior",
+      "description": "Output should contain at least one concrete action that demonstrates a quality rather than naming it"
+    },
+    {
+      "id": "uses-verified-credentials",
+      "name": "Uses defensible credential numbers",
+      "description": "If credentials are stated, they should match verified figures: 1,000+ trained, $10M+ revenue impact — not inflated or invented numbers"
+    }
+  ]
+}

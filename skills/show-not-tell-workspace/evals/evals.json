@@ -1,0 +1,23 @@
+{
+  "skill_name": "show-not-tell",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Apply show not tell to this caption I'm writing for my book promo:\n\n\"I built a successful agency from nothing. It was one of the hardest things I've ever done. I worked incredibly hard and made a lot of sacrifices along the way. But the isolation was the real cost — I didn't realize how lonely success could be until I was already deep in it. That loneliness led to a lot of bad decisions. I wrote The Bootstrap Entrepreneur to help other founders avoid the same mistakes. This book is about making decisions from strength instead of fear.\"",
+      "expected_output": "Rewritten caption where labels like 'hardest thing', 'worked incredibly hard', 'bad decisions', 'lonely success' are replaced with specific scenes, moments, objects, numbers — reader arrives at the emotional conclusion rather than being handed it.",
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "prompt": "Show don't tell this speaker bio:\n\n\"[Author] is a passionate entrepreneur and business coach who has overcome tremendous adversity to build a successful agency. He is deeply committed to helping other founders succeed. His journey taught him resilience, and he now uses those hard-won lessons to transform the businesses of his clients. He has made a significant impact on over 1,000 entrepreneurs.\"",
+      "expected_output": "Bio rewritten with concrete details replacing labels: 'passionate', 'tremendous adversity', 'resilience', 'significant impact' replaced with specific scenes, numbers, actions — reader infers the qualities rather than being told them.",
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "prompt": "This is the intro paragraph for a sales email. Apply show not tell:\n\n\"Last year was a transformative year for many of the entrepreneurs I work with. They came in struggling and left with clarity, better systems, and stronger businesses. The results were incredible. One client in particular had a breakthrough moment that changed the trajectory of their company. This is what I help people achieve.\"",
+      "expected_output": "Rewritten so 'transformative', 'struggling', 'incredible results', 'breakthrough moment' are replaced with the actual things that happened — specific client actions, numbers, before/after details — without inventing facts, and flagging where scenes are needed.",
+      "assertions": []
+    }
+  ]
+}

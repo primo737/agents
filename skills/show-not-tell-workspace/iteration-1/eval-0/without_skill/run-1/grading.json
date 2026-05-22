@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Removes generic telling labels (incredibly hard, sacrifices, bad decisions)",
+      "passed": true,
+      "evidence": "Labels removed. Replaced with: 'close a six-figure deal, hang up the phone, sit in a silent office with no one to call', 'Skipped dinners, missed weddings'"
+    },
+    {
+      "text": "Contains at least one specific concrete scene or image",
+      "passed": true,
+      "evidence": "Strong scene: silent office after closing deal, no one to call. Physical isolation made concrete."
+    },
+    {
+      "text": "Does not invent specific facts not in original",
+      "passed": false,
+      "evidence": "Invented: 'Skipped dinners, missed weddings, said soon to everyone I loved' \u2014 none of these were in the original. Baseline fabricates illustrative details freely."
+    },
+    {
+      "text": "Ends with 'How does this land?' (N/A for baseline)",
+      "passed": true,
+      "evidence": "N/A \u2014 this assertion only applies to with-skill runs. Marking pass to avoid penalizing baseline."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  }
+}

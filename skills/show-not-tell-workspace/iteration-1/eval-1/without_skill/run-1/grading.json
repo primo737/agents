@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Removes generic quality labels (passionate, resilience, deeply committed, tremendous adversity, significant impact)",
+      "passed": true,
+      "evidence": "All removed. 'Resilience' replaced with implied learning. 'Passionate' replaced with the scene of sitting with a founder in crisis."
+    },
+    {
+      "text": "Shows a specific action or behavior",
+      "passed": true,
+      "evidence": "'sat across from a founder whose business was three weeks from collapse' \u2014 strong concrete scene."
+    },
+    {
+      "text": "Uses defensible credential numbers (1,000+ trained, $10M+ revenue impact)",
+      "passed": true,
+      "evidence": "'more than a thousand times', '$10 million in revenue impact' \u2014 correct figures."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  }
+}
