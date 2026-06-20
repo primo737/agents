@@ -5,7 +5,7 @@ description: Ship a built funnel page or static site to Netlify. Use when Use "d
 
 # Deploy to Netlify
 
-Netlify is the secondary host. Use it for sites that already live there, for built-in form handling without a backend, or when a client requires it. Default to Vercel for new Cris funnels.
+Netlify is the secondary host. Use it for sites that already live there, for built-in form handling without a backend, or when a client requires it. Default to Vercel for new projects.
 
 ## When to use
 
@@ -17,7 +17,7 @@ Netlify is the secondary host. Use it for sites that already live there, for bui
 
 ## When NOT to use
 
-- New Cris funnel with no existing Netlify ties. Use deploy-vercel.
+- New funnel with no existing Netlify ties. Use deploy-vercel.
 - Page not built. Use the relevant funnel page-builder skill.
 - Strategy not defined. Use launchmap or launchmap-offer.
 - Copy not written. Use magnetic-story.
@@ -26,8 +26,8 @@ Netlify is the secondary host. Use it for sites that already live there, for bui
 ## The stack defaults
 
 - **Primary host: Vercel.** Lovable exports and Next.js builds default to Vercel. Choose Netlify only for a specific reason (existing project, Netlify Forms, client requirement).
-- **Domains and GHL coexistence.** Many Cris apex domains are served by GHL. Before changing nameservers or apex DNS, confirm whether GHL is still serving the domain. If GHL is live, route a subdomain (e.g., `[YOUR_DOMAIN]`) to Netlify via CNAME and leave the apex on GHL until the GHL page is decommissioned.
-- **Env vars.** Never commit `.env`. Use `netlify env:set` per environment. Required keys for Cris funnels: GHL API token, Stripe keys, GA4 measurement ID, Meta Pixel ID, any webhook secrets.
+- **Domains and GHL coexistence.** Many apex domains are served by GHL. Before changing nameservers or apex DNS, confirm whether GHL is still serving the domain. If GHL is live, route a subdomain (e.g., `[YOUR_DOMAIN]`) to Netlify via CNAME and leave the apex on GHL until the GHL page is decommissioned.
+- **Env vars.** Never commit `.env`. Use `netlify env:set` per environment. Required keys for funnels: GHL API token, Stripe keys, GA4 measurement ID, Meta Pixel ID, any webhook secrets.
 - **GHL API reference.** Token in macOS Keychain. Main Location ID `[GHL_LOCATION_ID]`. Fast Track sub-account `[GHL_LOCATION_ID]` is separate; never touch unless Use "Fast Track" by name. Base URL `[N8N_HOST]`.
 - **Automation.** Post-deploy hooks ping n8n on the VPS via the Claude SSH wrapper pattern, not the Anthropic node.
 
@@ -46,7 +46,7 @@ Netlify is the secondary host. Use it for sites that already live there, for bui
 - No URLs in SMS. Send deploy URLs by email or WhatsApp instead.
 - No auto-send to contacts. Draft any deploy-announcement for The approval first.
 - English only.
-- No em dashes in Cris-facing copy.
+- No em dashes in client-facing copy.
 - Always confirm GHL location before any action touching GHL (main vs Fast Track).
 
 ## Anti-patterns
@@ -54,7 +54,7 @@ Netlify is the secondary host. Use it for sites that already live there, for bui
 - Never change apex nameservers without confirming the existing GHL site is decommissioned.
 - Never commit secrets. Always `netlify env:set`.
 - Never ship to prod without the `--prod` flag. A bare `netlify deploy` is a draft.
-- Never run `netlify sites:delete` without explicit Cris confirmation in the same session.
+- Never run `netlify sites:delete` without explicit confirmation in the same session.
 - Never assume DNS is instant. Verify with `dig`.
 
 ## Templates and examples

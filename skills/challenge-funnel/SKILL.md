@@ -123,7 +123,7 @@ Confirms purchase, sets expectations for onboarding (welcome email, kickoff call
 5. Write copy in The voice constraints: English only, no em dashes, defensible numbers only.
 6. Build registration in Lovable. Build daily-page template once, duplicate per day with content swap. Build offer page on Vercel.
 7. Wire GHL workflow for the email sequence. Schedule each unlock email to fire on the correct date/time per registrant. Wire the Stripe webhook to n8n to GHL.
-8. Drip plan: any reminder broadcast over 10 contacts must drip at 1 per 30 to 60 seconds via GHL workflow stagger. Confirm cadence with Cris before firing. Especially the Day-N reminder and the cart-close email.
+8. Drip plan: any reminder broadcast over 10 contacts must drip at 1 per 30 to 60 seconds via GHL workflow stagger. Confirm cadence before sending. Especially the Day-N reminder and the cart-close email.
 9. QA: register a test contact, verify each daily unlock email fires on schedule, verify daily pages load only for the right tag, run a $1 SKU purchase end-to-end, verify Meta CAPI fires, GA4 logs Purchase, GHL receives the buyer tag, onboarding email arrives.
 10. Ship: SSL, OG image, favicon, 404 page, refund and terms pages live, customer-support email monitored, community moderator briefed.
 
@@ -132,12 +132,12 @@ Confirms purchase, sets expectations for onboarding (welcome email, kickoff call
 - English only across pages, every email, every SMS, every community post, every WhatsApp message. No Tagalog or Taglish.
 - No em dashes anywhere. Use commas, periods, or colons.
 - No URLs in any SMS. Move the link to email or WhatsApp, or instruct the recipient to check email.
-- No auto-send to real contacts. Always draft each daily email, the reminder broadcasts, the offer email, the cart-close email, the buyer email, and any 1-to-1 follow-up for Cris to approve before any send.
-- Drip outbound at 1 per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence with Cris before firing.
+- No auto-send to real contacts. Always draft each daily email, the reminder broadcasts, the offer email, the cart-close email, the buyer email, and any 1-to-1 follow-up for approval before any send.
+- Drip outbound at 1 per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence before sending.
 - Alice intro pattern for any 1-to-1 outreach: "Hi [Name], this is Alice, The AI assistant. You're getting this because you registered for [challenge name]." Then the personalized line.
 - Defensible credentials only: $10M+ revenue, 1,000+ trained. Never quote inflated $100M+ or 1,500+ figures.
 - Voice and storytelling work belongs in `magnetic-story` and `cris-vinson-storybank`. Pull from those, do not freestyle.
-- When editing recorded daily-training video, strip "right?" and "okay?" alongside um/uh/etc. Cris uses these as live discourse tags, but they read as padding in the cut.
+- When editing recorded daily-training video, strip "right?" and "okay?" alongside um/uh/etc. Used as live discourse tags, but they read as padding in the cut.
 
 ## Anti-patterns
 
@@ -263,4 +263,4 @@ You finished the sprint. You proved the math. Here is the program that
 turns this week into the next 12 months.
 ```
 
-No em dashes. English only. Defensible numbers. Cris-voice ready.
+No em dashes. English only. Defensible numbers. Brand-voice ready.

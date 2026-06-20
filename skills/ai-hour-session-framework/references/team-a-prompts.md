@@ -20,7 +20,7 @@ If the cohort is not Davao, substitute the appropriate cohort folder.
 
 Read `Transcripts/Part 1.md` and `Transcripts/Part 2.md`.
 
-GOAL: Extract the teaching framework Cris used live in the first half. Repeatable structure for the next session.
+GOAL: Extract the teaching framework used live in the first half. Repeatable structure for the next session.
 
 Report:
 1. **Opening sequence** — verbatim move list for the first 15 minutes, in order
@@ -38,7 +38,7 @@ Quote verbatim where possible. Under 600 words.
 
 Read `Transcripts/Part 3.md` and `Transcripts/Part 4.md`.
 
-GOAL: Extract the teaching framework Cris used live in the second half.
+GOAL: Extract the teaching framework used live in the second half.
 
 Report:
 1. **Mid-session teaching arcs** — concepts taught in this half, in order
@@ -83,7 +83,7 @@ Report each stage with verbatim attendee quotes:
 
 1. **EMPATHIZE** — pains, gains, jobs-to-be-done, surprises (tone shifts in the transcript)
 2. **DEFINE** — 3–5 "How might we…" statements, single Point of View statement, segmentation across attendee types
-3. **IDEATE** — ideas Cris generated live, ideas attendees proposed, latent ideas the transcript implies but no one named
+3. **IDEATE** — ideas generated live, ideas attendees proposed, latent ideas the transcript implies but no one named
 4. **PROTOTYPE** — components of the session-as-prototype, evidence each worked or failed
 5. **TEST** — 5–7 concrete design changes for the next session, each with the hypothesis it tests and the metric that confirms or refutes
 

@@ -23,7 +23,7 @@ Decision tree to pick the funnel type before any page gets built. The output fee
 - Page copy or layout patterns once the funnel is picked → `conversion-ux`, `design-system`.
 
 ## The stack defaults
-- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless Cris names it.
+- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless specified.
 - Page builds: Lovable for net-new builds, Framer for design-heavy / portfolio pages.
 - Hosting: Vercel (custom domains via GHL or Vercel DNS).
 - Automation: n8n on the VPS (call Claude via the SSH node + bash wrapper, not the Anthropic API node).
@@ -39,10 +39,10 @@ Decision tree to pick the funnel type before any page gets built. The output fee
 
 ## Brand voice rules (always apply)
 - English only. No Tagalog or Taglish in any page copy, button text, email, or SMS.
-- No em dashes anywhere in Cris-facing copy. Use commas, periods, or colons.
+- No em dashes anywhere in client-facing copy. Use commas, periods, or colons.
 - No URLs in any SMS — point to email instead.
 - Never auto-send to contacts. Draft, show for approval, then send.
-- Outbound sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run through a GHL workflow. Confirm cadence with Cris before firing.
+- Outbound sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run through a GHL workflow. Confirm cadence before sending.
 - Outreach DMs and SMS must open with: "Hi [Name], this is Alice, The AI assistant. You're getting this because you signed up for [event]." before any personalization.
 - Defensible credentials: $10M+ revenue, 1,000+ trained. Never use the older $100M+ or 1,500+ figures.
 

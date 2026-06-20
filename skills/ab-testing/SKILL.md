@@ -5,8 +5,8 @@ description: Design, run, and call A/B tests on [Author] funnel pages and email 
 
 ## When to use
 
-- Cris wants to test a headline, CTA, hero, or pricing variant on a funnel page.
-- A test is running and Cris asks whether to call the winner.
+- You want to test a headline, CTA, hero, or pricing variant on a funnel page.
+- A test is running and you ask whether to call the winner.
 - Setting up split routing for new traffic in Vercel Edge Config.
 - Splitting an audience in a GHL workflow by tag and measuring outcome.
 - Building a test brief before launch.
@@ -22,7 +22,7 @@ description: Design, run, and call A/B tests on [Author] funnel pages and email 
 ## The stack defaults
 
 - **Page split routing**: Vercel Edge Config or middleware for route-level splits. Framer and Lovable use built-in A/B (Framer A/B, Lovable preview variants).
-- **Audience split (email/SMS/CRM)**: GHL workflows split by tag or random number. Main location `[GHL_LOCATION_ID]`. Fast Track `[GHL_LOCATION_ID]` is separate; confirm with Cris before touching.
+- **Audience split (email/SMS/CRM)**: GHL workflows split by tag or random number. Main location `[GHL_LOCATION_ID]`. Fast Track `[GHL_LOCATION_ID]` is separate; confirm before touching.
 - **Measurement**: PostHog (preferred for funnels and feature flags) or GA4 with custom dimension for variant. Never measure split tests in Pixel alone.
 - **Significance**: 95% confidence minimum. Use a Bayesian or frequentist calculator (PostHog has both built in).
 - **Sample size**: minimum 100 conversions per variant before checking. Plan duration for at least one full week to capture day-of-week effects.
@@ -58,7 +58,7 @@ description: Design, run, and call A/B tests on [Author] funnel pages and email 
 - Never measure a page split in Pixel alone; Pixel attribution windows distort variant comparisons.
 - Never run two overlapping tests on the same page without a holdout group.
 - Never reuse a winning variant as the new control without a fresh confirmation test if the lift was below 10%.
-- Never test on Fast Track (`[GHL_LOCATION_ID]`) without explicit "Fast Track" instruction from Cris.
+- Never test on Fast Track (`[GHL_LOCATION_ID]`) without explicit Fast Track instruction.
 
 ## What to test (priority)
 

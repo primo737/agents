@@ -6,7 +6,7 @@ description: Audit and optimize [Author] funnel pages for Core Web Vitals (LCP u
 ## When to use
 
 - A funnel page on Lovable, Framer, or Vercel feels slow or scores red in Lighthouse.
-- Cris drops a PageSpeed Insights URL or screenshot and asks "what's wrong with this page".
+- Someone drops a PageSpeed Insights URL or screenshot and asks "what's wrong with this page".
 - About to launch traffic and need a pre-launch speed audit.
 - LCP, CLS, INP, or TTFB is failing and the page needs a fix-by-fix plan.
 - Hero image, web font, or third-party script is suspected of blocking render.
@@ -192,7 +192,7 @@ Inline above-the-fold styles only. Defer the rest.
 
 ## Output format
 
-When delivering an audit, give Cris:
+When delivering an audit, provide:
 
 1. Field metrics (CrUX) and lab metrics (Lighthouse) side by side.
 2. The single LCP element identified.

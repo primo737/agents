@@ -5,19 +5,19 @@ description: Ship a built funnel page or static site to Cloudflare Pages via Wra
 
 # Deploy to Cloudflare Pages
 
-Cloudflare Pages is the secondary host. Use it for global edge performance, Workers integration, or when a domain is already on Cloudflare DNS. Default to Vercel for new Cris funnels.
+Cloudflare Pages is the secondary host. Use it for global edge performance, Workers integration, or when a domain is already on Cloudflare DNS. Default to Vercel for new projects.
 
 ## When to use
 
 - Funnel needs global edge speed (audience spans many regions).
 - A Cloudflare Worker is part of the architecture (e.g., edge auth, A/B routing, geo redirects).
-- The domain is already on Cloudflare DNS and Cris wants everything in one console.
+- The domain is already on Cloudflare DNS and you want everything in one console.
 - Adding a custom domain to an existing Pages project.
 - Direct upload of a built `dist/` from Lovable, Vite, or Next.js static export.
 
 ## When NOT to use
 
-- New Cris funnel with no specific reason to choose Cloudflare. Use deploy-vercel.
+- New funnel with no specific reason to choose Cloudflare. Use deploy-vercel.
 - Page not built. Use the relevant funnel page-builder skill.
 - Strategy not defined. Use launchmap or launchmap-offer.
 - Copy not written. Use magnetic-story.
@@ -26,8 +26,8 @@ Cloudflare Pages is the secondary host. Use it for global edge performance, Work
 ## The stack defaults
 
 - **Primary host: Vercel.** Cloudflare is for edge, Workers, or existing-CF-DNS cases. Don't reflex-deploy here.
-- **Domains and GHL coexistence.** Many Cris apex domains are served by GHL. Before changing nameservers or apex DNS, confirm whether GHL is still serving the domain. If GHL is live, route a subdomain (e.g., `[YOUR_DOMAIN]`) to Pages via CNAME and leave the apex on GHL until the GHL page is decommissioned.
-- **Env vars.** Never commit `.env`. Use `wrangler pages secret put` (production) or the Pages dashboard. Required keys for Cris funnels: GHL API token, Stripe keys, GA4 measurement ID, Meta Pixel ID, webhook secrets.
+- **Domains and GHL coexistence.** Many apex domains are served by GHL. Before changing nameservers or apex DNS, confirm whether GHL is still serving the domain. If GHL is live, route a subdomain (e.g., `[YOUR_DOMAIN]`) to Pages via CNAME and leave the apex on GHL until the GHL page is decommissioned.
+- **Env vars.** Never commit `.env`. Use `wrangler pages secret put` (production) or the Pages dashboard. Required keys for funnels: GHL API token, Stripe keys, GA4 measurement ID, Meta Pixel ID, webhook secrets.
 - **GHL API reference.** Token in macOS Keychain. Main Location ID `[GHL_LOCATION_ID]`. Fast Track sub-account `[GHL_LOCATION_ID]` is separate; never touch unless Use "Fast Track" by name. Base URL `[N8N_HOST]`.
 - **Automation.** Post-deploy hooks ping n8n on the VPS via the Claude SSH wrapper pattern, not the Anthropic node.
 
@@ -46,7 +46,7 @@ Cloudflare Pages is the secondary host. Use it for global edge performance, Work
 - No URLs in SMS. Send deploy URLs by email or WhatsApp instead.
 - No auto-send to contacts. Draft any deploy-announcement for The approval first.
 - English only.
-- No em dashes in Cris-facing copy.
+- No em dashes in client-facing copy.
 - Always confirm GHL location before any action touching GHL (main vs Fast Track).
 
 ## Anti-patterns
@@ -54,7 +54,7 @@ Cloudflare Pages is the secondary host. Use it for global edge performance, Work
 - Never change apex nameservers without confirming the existing GHL site is decommissioned.
 - Never commit secrets. Always `wrangler pages secret put`.
 - Never ship to prod without `--branch=main` (or whatever the production branch is set to). Default `wrangler pages deploy` is a preview.
-- Never delete a Pages project or domain without explicit Cris confirmation in the same session.
+- Never delete a Pages project or domain without explicit confirmation in the same session.
 - Never assume DNS is instant. Verify with `dig`.
 - Never enable "Proxied" (orange cloud) on a CNAME that points to a hostname outside Cloudflare without checking that the cert chain still works.
 

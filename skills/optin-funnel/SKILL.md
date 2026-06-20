@@ -77,7 +77,7 @@ Single-column, no nav. Above-the-fold must contain headline, subhead, asset visu
 
 ## Process
 
-1. Intake: confirm lead magnet name, audience, primary outcome, traffic source, and downstream offer. If any of these are missing, pause and ask Cris before designing.
+1. Intake: confirm lead magnet name, audience, primary outcome, traffic source, and downstream offer. If any of these are missing, pause and confirm before designing.
 2. Confirm GHL location (main vs Fast Track) before touching any form, automation, or contact data. Default assumption is wrong; ask.
 3. Wireframe the squeeze page block-by-block in plain text. Get sign-off before writing copy.
 4. Write copy in The voice constraints: English only, no em dashes, no Tagalog, defensible numbers only ($10M+ revenue, 1,000+ trained).
@@ -91,8 +91,8 @@ Single-column, no nav. Above-the-fold must contain headline, subhead, asset visu
 - English only. No Tagalog or Taglish in any outbound copy.
 - No em dashes anywhere in the page or follow-up. Use commas, periods, or colons. Rewrite if a dash sneaks in.
 - No URLs in any SMS. Move the link to email or WhatsApp, or instruct the recipient to check email.
-- No auto-send to real contacts. Always draft the welcome email, the post-opt-in SMS, and the thank-you page copy for Cris to approve before any send.
-- Drip outbound at 1 message per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence with Cris before firing.
+- No auto-send to real contacts. Always draft the welcome email, the post-opt-in SMS, and the thank-you page copy for approval before any send.
+- Drip outbound at 1 message per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence before sending.
 - Alice intro pattern for any outreach that follows the opt-in: "Hi [Name], this is Alice, The AI assistant. You're getting this because you signed up for [event or asset]." Then the personalized line.
 - Defensible credentials only: $10M+ revenue, 1,000+ trained. Never quote the older inflated $100M+ or 1,500+ figures.
 - Voice and storytelling work belongs in `magnetic-story` and `cris-vinson-storybank`. Pull from those, do not freestyle.
@@ -197,4 +197,4 @@ Privacy: No spam. One unsubscribe click.
 Proof: Used by 1,000+ founders across 14 industries.
 ```
 
-No em dashes. English only. Defensible numbers. Cris-voice ready.
+No em dashes. English only. Defensible numbers. Brand-voice ready.

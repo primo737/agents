@@ -216,7 +216,7 @@ Required. Pause option, save offer, exit survey. Recovers 15-30% of cancels when
 5. **Trigger**: webhook = `customer.subscription.trial_will_end` (3 days before).
 6. **Send**: "Your trial ends in 3 days, here is what to do next" email.
 7. **Trigger**: webhook = `invoice.paid` (first paid invoice).
-8. **Tag**: replace `member-trial` with `member-active-{{slug}}`. Slack ping Cris.
+8. **Tag**: replace `member-trial` with `member-active-{{slug}}`. Send notification.
 9. **Trigger**: webhook = `invoice.payment_failed`.
 10. **Send**: dunning sequence (day 1, 3, 5). Tag `member-dunning`.
 11. **Trigger**: webhook = `customer.subscription.deleted`.

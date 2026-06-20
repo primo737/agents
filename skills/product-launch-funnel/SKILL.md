@@ -30,7 +30,7 @@ The Jeff Walker PLF runs a 4-video sequence over 7 to 14 days that builds antici
 
 - Pages: Lovable for speed, Framer for polish, or Next.js plus Tailwind for full control. Deploy to Vercel.
 - Video hosting: Vimeo Pro or Wistia. Never YouTube on PLC pages.
-- Reg, forms, email, SMS, and tagging: GHL main location `[GHL_LOCATION_ID]`. Confirm with Cris first, main or Fast Track. Tag every contact with `plc1_watched`, `plc2_watched`, `plc3_watched`, `cart_open`, `cart_close`.
+- Reg, forms, email, SMS, and tagging: GHL main location `[GHL_LOCATION_ID]`. Confirm before proceeding, main or Fast Track. Tag every contact with `plc1_watched`, `plc2_watched`, `plc3_watched`, `cart_open`, `cart_close`.
 - Automation: n8n on the VPS via SSH using the existing Claude SSH pattern. Do not use the Anthropic API node.
 - Reminders and SMS: GHL workflows. Never URLs in SMS.
 - Tracking: Meta Pixel and GA4 on every page. Fire `optin`, `plc_view`, `plc_watch_75`, `comment_post`, `cart_open_visit`, `cart_purchase`.
@@ -146,11 +146,11 @@ Confirmation, access details, "what to do in the next 24 hours" 3 step list.
 - English only on every page, every email, every SMS.
 - No em dashes anywhere in the copy. Use commas, periods, colons, or rewrite.
 - No URLs in SMS reminders. Direct to email or WhatsApp instead.
-- No auto-send to contacts. Draft every outbound for Cris approval first.
+- No auto-send to contacts. Draft every outbound for approval first.
 - Sends over 10 contacts must drip at 1 per 30 to 60 seconds, or run via GHL workflow.
 - Outreach DMs open with "Hi [Name], this is Alice, The AI assistant." then "You're getting this because you signed up for [event]." before personalization.
 - Defensible numbers only, $10M+ revenue, 1,000+ trained. Never $100M+ or 1,500+.
-- Voice work and any first-person Cris narrative defer to `magnetic-story` and `cris-vinson-storybank`.
+- Voice work and any first-person narrative refer to the storybank (`magnetic-story` and `cris-vinson-storybank`).
 
 ## Anti-patterns
 

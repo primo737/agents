@@ -9,11 +9,11 @@ A qualification gate that filters $2K+ buyers before any human gets on a call. T
 
 ## When to use
 
-- Coaching or consulting program priced $2,000 to $10,000 where Cris does not want unqualified calls.
+- Coaching or consulting program priced $2,000 to $10,000 where you don't want unqualified calls.
 - Mastermind, group coaching, or cohort with limited seats and a "right fit" requirement.
 - Done-with-you offer where a discovery call is required and The calendar capacity is a real constraint.
 - Warm audience flow: webinar attendee, newsletter, podcast listener, program alumni, referral.
-- Re-engaging cooled-off leads who already know Cris but have not bought yet.
+- Re-engaging cooled-off leads who already know you but haven't bought yet.
 
 ## When NOT to use
 
@@ -82,7 +82,7 @@ A short Loom or doc the applicant must consume before the call. Increases show r
 | Investment readiness | 20 | Below offer floor = auto-disqualify |
 | Start timeline | 15 | "Just exploring" = auto-disqualify |
 
-Pass: 70+. Review: 50-69 (Cris reviews manually). Fail: <50 (auto-nurture).
+Pass: 70+. Review: 50-69 (manual review required). Fail: <50 (auto-nurture).
 
 ### Disqualifier rules (hard)
 
@@ -93,7 +93,7 @@ Pass: 70+. Review: 50-69 (Cris reviews manually). Fail: <50 (auto-nurture).
 
 ### Hand-off to call
 
-- Pass score: GHL workflow tags `application-qualified`, sends calendar link via email + SMS, adds Cris-internal Slack ping, sets owner to Cris.
+- Pass score: GHL workflow tags `application-qualified`, sends calendar link via email + SMS, adds internal Slack ping, sets owner = assigned.
 - Review score: tags `application-review`, sends "Thanks, we are reviewing" email, queues internal review task.
 - Fail: tags `application-disqualified`, sends polite decline email with self-serve resource ([YOUR_PROGRAM], newsletter, low-ticket product), drops into long-term nurture sequence.
 
@@ -105,7 +105,7 @@ Pass: 70+. Review: 50-69 (Cris reviews manually). Fail: <50 (auto-nurture).
 4. **Build**: scaffold in Lovable/Framer/Next.js. Drop in proof, headshots, case study photos.
 5. **Integrate**: GHL form, scoring workflow, calendar embed, Stripe (if applicable), Meta Pixel, GA4.
 6. **QA**: submit a real test application from each scoring tier. Confirm tags, emails, SMS, calendar invites all fire correctly. Test on iPhone Safari, Android Chrome, desktop.
-7. **Ship**: push to custom domain. Run smoke test. Hand Cris the loom + checklist.
+7. **Ship**: push to custom domain. Run smoke test. Share the Loom + checklist.
 
 ## Brand voice rules (always apply)
 
@@ -256,7 +256,7 @@ Pass: 70+. Review: 50-69 (Cris reviews manually). Fail: <50 (auto-nurture).
 1. **Trigger**: Form submitted = "{{OFFER_NAME}} Application".
 2. **Calculate score**: sum field scores via GHL custom values + math.
 3. **Branch on score**:
-   - Pass (70+): tag `application-qualified` + `offer-{{slug}}`. Send calendar link via email and SMS. Slack ping Cris. Owner = Cris.
+   - Pass (70+): tag `application-qualified` + `offer-{{slug}}`. Send calendar link via email and SMS. Send Slack notification. Owner = assigned.
    - Review (50-69): tag `application-review`. Send "We are reviewing" email. Create internal review task.
    - Fail (<50): tag `application-disqualified`. Send polite decline email with free resource link. Add to long-term nurture pipeline.
 4. **Reminders** (qualified path): 24hr before call email, 1hr before call SMS (no link, just "Check your email for the Zoom link").

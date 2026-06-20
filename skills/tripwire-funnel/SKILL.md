@@ -110,7 +110,7 @@ Delivers the bought asset, sets the next-step expectation, and surfaces customer
 6. Build the page in Lovable or Framer. Embed Stripe checkout with order bump line item. Build the post-purchase upsell page on Vercel for the one-click charge endpoint.
 7. Wire Stripe webhook to n8n VPS. n8n branches: bump-purchased tag, upsell-purchased tag, downsell-purchased tag, refunded tag.
 8. QA: end-to-end test purchase with a real $1 SKU, verify Meta CAPI fires, GA4 logs Purchase, GHL receives the tag, buyer email arrives in under 60 seconds, refund flow works.
-9. Drip plan: any post-purchase email sequence over 10 buyers must drip at 1 per 30 to 60 seconds via GHL workflow stagger. Confirm cadence with Cris before firing.
+9. Drip plan: any post-purchase email sequence over 10 buyers must drip at 1 per 30 to 60 seconds via GHL workflow stagger. Confirm cadence before sending.
 10. Ship: SSL, OG image, favicon, refund and terms pages live, customer-support email monitored.
 
 ## Brand voice rules (always apply)
@@ -118,8 +118,8 @@ Delivers the bought asset, sets the next-step expectation, and surfaces customer
 - English only across page, checkout, emails, SMS. No Tagalog or Taglish.
 - No em dashes anywhere. Use commas, periods, or colons.
 - No URLs in any SMS. Move the link to email or WhatsApp, or instruct the recipient to check email.
-- No auto-send to real contacts. Always draft the buyer email, the upsell email, the downsell email, the refund email, and the abandoned-checkout sequence for Cris to approve before any send.
-- Drip outbound at 1 per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence with Cris before firing.
+- No auto-send to real contacts. Always draft the buyer email, the upsell email, the downsell email, the refund email, and the abandoned-checkout sequence for approval before any send.
+- Drip outbound at 1 per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence before sending.
 - Alice intro pattern for any 1-to-1 follow-up: "Hi [Name], this is Alice, The AI assistant. You're getting this because you bought [tripwire name]." Then the personalized line.
 - Defensible credentials only: $10M+ revenue, 1,000+ trained. Never quote the older inflated $100M+ or 1,500+ figures.
 - Voice and storytelling work belongs in `magnetic-story` and `cris-vinson-storybank`. Pull from those, do not freestyle.
@@ -238,4 +238,4 @@ and we refund the full $27. No forms, no questions, no friction.
 CTA: Yes, send me the pack for $27.
 ```
 
-No em dashes. English only. Defensible numbers. Cris-voice ready.
+No em dashes. English only. Defensible numbers. Brand-voice ready.

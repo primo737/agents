@@ -9,7 +9,7 @@ description: Wire [Author] funnels to the GHL-centered marketing stack covering 
 - Setting up Stripe checkout that lands the contact and order in GHL.
 - Wiring an n8n workflow on the VPS to plumb data between GHL and another tool.
 - Documenting a webhook payload between two systems.
-- Cris asks about Mailchimp, ConvertKit, ActiveCampaign, or HubSpot as alternatives or migrations.
+- If asked about Mailchimp, ConvertKit, ActiveCampaign, or HubSpot as alternatives or migrations.
 - Mapping a funnel handoff: form submit, payment, booking, tag, automation trigger.
 
 ## When NOT to use
@@ -27,7 +27,7 @@ GHL is the primary CRM, email engine, SMS engine, calendar, and workflow runner.
 - **Payments**: Stripe runs through GHL for most products. Stripe is connected at the location level. Orders create a contact and an opportunity automatically.
 - **Cross-tool plumbing**: n8n on the VPS handles anything GHL can't do natively. n8n calls Claude via SSH node hitting a bash wrapper, NOT the Anthropic API node. Reference workflow: `launchmap-builder-claude`.
 - **WhatsApp**: WAHA on the VPS for outbound. Triggered from n8n. Never send from Mac.
-- **Mailchimp, ConvertKit, ActiveCampaign**: NOT in use. Document only as alternatives if Cris explicitly asks. Do not propose migrating away from GHL without a real reason.
+- **Mailchimp, ConvertKit, ActiveCampaign**: NOT in use. Document only as alternatives if explicitly requested. Do not propose migrating away from GHL without a real reason.
 - **HubSpot**: not in use as primary. Only relevant when integrating with a partner who uses it.
 - **API access**: GHL Private Integration Token (PIT) stored in Keychain. Location ID `[GHL_LOCATION_ID]`. Base URL `[N8N_HOST]`.
 
@@ -39,7 +39,7 @@ GHL is the primary CRM, email engine, SMS engine, calendar, and workflow runner.
 4. Map every field. Email, name, phone, source UTMs, custom fields. Confirm GHL custom fields exist before wiring.
 5. Build the integration. Document the IDs, endpoints, and payloads.
 6. Test end-to-end with a real submission. Confirm the contact lands in GHL with all fields and tags. Confirm downstream workflow fires.
-7. Add error handling in n8n if cross-tool. Retry on failure, alert Cris on persistent error.
+7. Add error handling in n8n if cross-tool. Retry on failure, alert on persistent error.
 8. Document for handoff: where it lives, what triggers it, where to see logs.
 
 ## Brand voice rules (always apply)
@@ -54,7 +54,7 @@ GHL is the primary CRM, email engine, SMS engine, calendar, and workflow runner.
 
 ## Anti-patterns
 
-- Never recommend Mailchimp, ConvertKit, or ActiveCampaign migration without a real reason. Cris is on GHL.
+- Never recommend Mailchimp, ConvertKit, or ActiveCampaign migration without a real reason. GHL is the primary platform.
 - Never propose a Zapier subscription when n8n on the VPS already does the job.
 - Never call the Anthropic API node from n8n. Use the SSH node hitting the bash wrapper on the VPS.
 - Never act on Fast Track (`[GHL_LOCATION_ID]`) unless Use "Fast Track" by name.
@@ -208,9 +208,9 @@ Content-Type: application/json
 
 ## Alternative tools (reference only. not in use)
 
-If Cris explicitly asks about migrating or integrating with these:
+If asked about migrating or integrating with these:
 
-| Tool | What it does | Why Cris isn't on it |
+| Tool | What it does | Why it's not in use |
 |---|---|---|
 | Mailchimp | Email marketing | GHL covers email + has CRM, SMS, workflows in one place |
 | ConvertKit | Email marketing for creators | Same |
@@ -219,7 +219,7 @@ If Cris explicitly asks about migrating or integrating with these:
 | Zapier | Cross-tool plumbing | n8n on VPS does the same for ~$0/mo marginal cost |
 | Make | Cross-tool plumbing | Same |
 
-If a partner or client uses one of these, integrate via webhook or native API. Do not migrate Cris off GHL.
+If a partner or client uses one of these, integrate via webhook or native API. Do not migrate off GHL.
 
 ## Embed snippets (reference)
 
@@ -269,4 +269,4 @@ async function checkout() {
 - [ ] WhatsApp drips, no blast
 - [ ] No SMS contains a URL
 - [ ] All outbound copy English only, no em dashes
-- [ ] Drafts shown to Cris before sending to real contacts
+- [ ] Drafts reviewed before sending to real contacts

@@ -5,7 +5,7 @@ description: Design tokens and component specs for premium-feeling funnel pages 
 
 # Design System
 
-Premium visual language for The funnels. Token tables + component specs that drop into Lovable, Framer, or any Tailwind project. Every page Cris ships should look like it costs $10K to design.
+Premium visual language for The funnels. Token tables + component specs that drop into Lovable, Framer, or any Tailwind project. Every page you ship should look like it costs $10K to design.
 
 ## When to use
 - Starting a new funnel build in Lovable or Framer.
@@ -24,7 +24,7 @@ Premium visual language for The funnels. Token tables + component specs that dro
 - Webinar SCRIPT → `expert-secrets-perfect-webinar`.
 
 ## The stack defaults
-- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless Cris names it.
+- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless specified.
 - Page builds: Lovable for net-new, Framer for design-heavy.
 - Hosting: Vercel.
 - Automation: n8n on the VPS via SSH node + bash wrapper.
@@ -41,7 +41,7 @@ Premium visual language for The funnels. Token tables + component specs that dro
 
 ## Brand voice rules (always apply)
 - English only on every visible label.
-- No em dashes anywhere in Cris-facing copy. Use commas, periods, or colons.
+- No em dashes anywhere in client-facing copy. Use commas, periods, or colons.
 - No URLs in any SMS the page triggers.
 - Never auto-send to contacts. Draft and approve.
 - Sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run via a GHL workflow.

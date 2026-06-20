@@ -13,7 +13,7 @@ When the deal size justifies a sales conversation, the page exists to pre-sell, 
 - Done-for-you services where every client is a custom scope.
 - Enterprise software or consulting requiring a discovery conversation.
 - Warm or hot traffic: case study readers, podcast guests, referrals, program alumni, webinar attendees.
-- Re-engagement of cold leads who already follow Cris but have not bought.
+- Re-engagement of cold leads who already follow you but haven't bought.
 
 ## When NOT to use
 
@@ -95,19 +95,19 @@ Pass: 75+ for $5K+ offers. Review: 60-74. Fail: <60.
 
 ### Hand-off to call
 
-- Pass: tag `htf-qualified`, calendar link via email + SMS, Slack ping Cris, owner = Cris.
-- Review: tag `htf-review`, internal task for Cris, hold email "We are reviewing".
+- Pass: tag `htf-qualified`, calendar link via email + SMS, send notification, owner = assigned.
+- Review: tag `htf-review`, internal task, hold email "We are reviewing".
 - Fail: tag `htf-disqualified`, polite decline email, route to long-term nurture or down-sell to a lower-tier offer.
 
 ## Process
 
 1. **Intake**: confirm offer, price, payment terms, audience temperature, GHL location.
 2. **Wireframe**: map all 6 pages and the email flow before writing.
-3. **Copy**: draft each block to word counts. Pull case studies and stories from `cris-vinson-storybank`.
+3. **Copy**: draft each block to word counts. Pull case studies and stories from the storybank.
 4. **Build**: scaffold in Lovable/Framer/Next.js. Embed video, headshots, case study photos.
 5. **Integrate**: GHL form, scoring workflow, calendar embed, Stripe deposit checkout, Meta Pixel, GA4.
 6. **QA**: test from each scoring tier, every device, every email/SMS step, calendar timezone.
-7. **Ship**: custom domain, smoke test, hand Cris a Loom walkthrough.
+7. **Ship**: custom domain, smoke test, provide a Loom walkthrough.
 
 ## Pricing psychology for high-ticket
 
@@ -287,7 +287,7 @@ Same structure as application-funnel, with raised disqualifier thresholds:
 1. Trigger: Form submitted = "{{OFFER_NAME}} Application".
 2. Calculate score.
 3. Branch:
-   - Pass (75+): tag `htf-qualified-{{slug}}`, send calendar link email + SMS, Slack Cris, owner = Cris.
+   - Pass (75+): tag `htf-qualified-{{slug}}`, send calendar link email + SMS, send notification, owner = assigned.
    - Review (60-74): tag `htf-review`, hold email, internal task.
    - Fail (<60): tag `htf-disqualified`, polite decline + free resource, nurture pipeline.
 4. Reminders: 24hr email, 1hr SMS, 5min "We are starting" SMS.

@@ -7,7 +7,7 @@ description: Install and configure GA4, Meta Pixel, Google Tag Manager, conversi
 
 - Standing up GA4, Meta Pixel, or GTM on a new funnel page (Lovable, Framer, Vercel).
 - Conversion events are missing in Ads Manager or GA4.
-- Cris is launching paid traffic and needs UTM conventions and tracking proof.
+- You are launching paid traffic and need UTM conventions and tracking proof.
 - A GHL form needs to fire a Pixel Lead event AND a GA4 conversion.
 - Cross-domain tracking is broken between funnel page and GHL-hosted thank-you page.
 - Ad URLs are being shared with no UTMs and attribution is collapsing.
@@ -34,7 +34,7 @@ GHL is the system of record. GA4, Meta Pixel, and GTM are net-new layers ON TOP 
 ## Process
 
 1. Confirm which page hosts the form (GHL funnel page, Lovable, Framer, or Vercel) and where the thank-you page lives.
-2. Decide whether GTM is needed. If Cris has 3+ tags or wants non-developer changes, use GTM. Otherwise hardcode GA4 and Pixel.
+2. Decide whether GTM is needed. If there are 3+ tags or you want non-developer changes, use GTM. Otherwise hardcode GA4 and Pixel.
 3. Install GA4 base tag, Meta Pixel base tag (if running Meta ads), and GTM container if used.
 4. Define the event taxonomy (see table below). Map each event to one source: GHL native OR custom GA4/Pixel script. Never both.
 5. Wire UTM capture script on every landing page. Confirm UTMs reach GHL custom fields by submitting a test form with UTMs in the URL.
@@ -66,7 +66,7 @@ GHL is the system of record. GA4, Meta Pixel, and GTM are net-new layers ON TOP 
 ## GTM container blueprint
 
 ```
-GTM-XXXXXXX (Cris funnel container)
+GTM-XXXXXXX (primary funnel container)
   Tags
     GA4 Configuration (G-XXXXXXXXXX) on All Pages
     GA4 Event: cta_click; trigger: CTA click

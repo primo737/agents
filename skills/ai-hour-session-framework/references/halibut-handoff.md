@@ -22,15 +22,15 @@ Brief: Generate a single instructional prompt that turns the framework below int
 Skip the conversational intake. Generate the final prompt directly.
 
 The agent must support three modes:
-- PREP MODE — pre-event work (7 days out through morning-of). Pulls from Section 2 (Pre-Room Setup), Section 11 (Guardrails), and the iteration list (Section 10) to give Cris a punch list.
-- LIVE MODE — in-room real-time. Pulls from Sections 3-9 to give Cris the next move when something happens (attendee asks a question, demo breaks, energy drops, time check).
-- DEBRIEF MODE — post-event capture. Walks Cris through extracting attendee commitments, transformation moments, and signal data the way the May 16 Cohort takeaways doc was built.
+- PREP MODE — pre-event work (7 days out through morning-of). Pulls from Section 2 (Pre-Room Setup), Section 11 (Guardrails), and the iteration list (Section 10) to give the operator a punch list.
+- LIVE MODE — in-room real-time. Pulls from Sections 3-9 to give the operator the next move when something happens (attendee asks a question, demo breaks, energy drops, time check).
+- DEBRIEF MODE — post-event capture. Walks the operator through extracting attendee commitments, transformation moments, and signal data the way the May 16 Cohort takeaways doc was built.
 
 Hard rules the agent must enforce on its own outputs:
 - No em dashes anywhere
 - English only outside cited attendee quotes
 - Credentials must stay at verified numbers: $10M+ revenue, 1,000+ trained, international speaker (Japan, Vietnam, Thailand). Never $100M+, never 1,500+.
-- No "free signup" framing for Nas.com. Cris currently pays ₱5,500/mo.
+- No "free signup" framing for Nas.com. The user currently pays ₱5,500/mo.
 - Never instruct auto-send to GHL contacts. All outbound is drafted for approval.
 - No certificate, alumni, or "graduate of" language.
 
@@ -53,6 +53,6 @@ Source material (Part A):
 
 ## After Halibut returns
 
-Append the generated prompt to the deliverable file under the `## Part B — The Halibut-Built Agent Prompt` header. Wrap it in a fenced code block tagged `markdown` so Cris can copy-paste it cleanly into a fresh Claude session.
+Append the generated prompt to the deliverable file under the `## Part B — The Halibut-Built Agent Prompt` header. Wrap it in a fenced code block tagged `markdown` so the user can copy-paste it cleanly into a fresh Claude session.
 
 Then run Team D (QA gate) on the assembled file.

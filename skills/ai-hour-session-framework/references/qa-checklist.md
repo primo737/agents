@@ -50,7 +50,7 @@ Any match fails.
 
 ## Gate 4 — Nas.com pricing
 
-**Memory:** `project_nas_io_plan`. As of 2026-04-20, Nas.com has no free plan. Cris pays ₱5,500/mo.
+**Memory:** `project_nas_io_plan`. As of 2026-04-20, Nas.com has no free plan. The user pays ₱5,500/mo.
 
 **Verify:** Search for problematic framing.
 

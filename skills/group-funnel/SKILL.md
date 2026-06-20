@@ -90,7 +90,7 @@ Single column, no nav, mobile-first.
 
 ## Process
 
-1. Intake: confirm community platform (Skool, Whop, Facebook, Discord, Circle, Mighty), community URL, lead magnet name, target audience, downstream offer if any. If platform or community URL is missing, pause and ask Cris.
+1. Intake: confirm community platform (Skool, Whop, Facebook, Discord, Circle, Mighty), community URL, lead magnet name, target audience, downstream offer if any. If platform or community URL is missing, pause and confirm.
 2. Confirm GHL location (main vs Fast Track) before any form, automation, or contact action. Default assumption is wrong; ask.
 3. Confirm whether the community is free or paid. If paid, confirm the trial mechanism and whether the page should drive directly to checkout or to a free trial with upgrade.
 4. Wireframe both pages block-by-block in plain text. Get sign-off before writing copy.
@@ -98,7 +98,7 @@ Single column, no nav, mobile-first.
 6. Build in Lovable or Framer. Embed the GHL form. Wire the webhook to n8n. Tag the contact with both `lead_[asset]` and `community_[platform]_pending`.
 7. Build the thank-you community CTA. Test the community-URL deep link on mobile (Skool app, Whop app, Facebook app, Discord app should each open natively if installed).
 8. QA: mobile-first render, form submit end-to-end, welcome email arrives in 60 seconds, community link opens correct app, Meta Pixel fires Lead and ViewContent, GA4 records both events.
-9. Drip plan: any reminder sequence over 10 contacts must drip at 1 per 30 to 60 seconds via GHL workflow stagger. Confirm cadence with Cris before firing.
+9. Drip plan: any reminder sequence over 10 contacts must drip at 1 per 30 to 60 seconds via GHL workflow stagger. Confirm cadence before sending.
 10. Ship: SSL, OG image, favicon, 404 page, noindex on thank-you if the asset URL must stay private.
 
 ## Brand voice rules (always apply)
@@ -106,8 +106,8 @@ Single column, no nav, mobile-first.
 - English only across page, emails, SMS, group welcome messages, and onboarding DMs. No Tagalog or Taglish.
 - No em dashes anywhere. Use commas, periods, or colons.
 - No URLs in any SMS. Move the link to email or WhatsApp, or instruct the recipient to check email.
-- No auto-send to real contacts. Always draft the welcome email, the community-onboarding DM, the post-join SMS, and the thank-you page copy for Cris to approve before any send.
-- Drip outbound at 1 per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence with Cris before firing.
+- No auto-send to real contacts. Always draft the welcome email, the community-onboarding DM, the post-join SMS, and the thank-you page copy for approval before any send.
+- Drip outbound at 1 per 30 to 60 seconds for any list larger than 10 contacts. Confirm cadence before sending.
 - Alice intro pattern for any 1-to-1 outreach: "Hi [Name], this is Alice, The AI assistant. You're getting this because you signed up for [community name]." Then the personalized line.
 - Defensible credentials only: $10M+ revenue, 1,000+ trained. Never quote inflated $100M+ or 1,500+ figures.
 - Voice and storytelling work belongs in `magnetic-story` and `cris-vinson-storybank`. Pull from those, do not freestyle.
@@ -222,7 +222,7 @@ Bullets:
 + The exact ad-to-offer sequence I run today
 + The DM script that books calls without pitching
 + The pricing math behind a 30 percent close rate
-+ Live group calls every Thursday with Cris
++ Live group calls every Thursday
 
 Form CTA: Send me instant access
 
@@ -238,4 +238,4 @@ you are stuck on right now.
 Community CTA: Open Skool and join free
 ```
 
-No em dashes. English only. Defensible numbers. Cris-voice ready.
+No em dashes. English only. Defensible numbers. Brand-voice ready.

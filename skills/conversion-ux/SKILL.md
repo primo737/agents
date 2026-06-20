@@ -5,7 +5,7 @@ description: Conversion-focused UX patterns for funnel pages — layout, CTA des
 
 # Conversion UX
 
-Layout, CTA, social proof, urgency, and friction patterns. Apply on every funnel page Cris ships in Lovable, Framer, or GHL. These are requirements, not suggestions.
+Layout, CTA, social proof, urgency, and friction patterns. Apply on every funnel page you ship in Lovable, Framer, or GHL. These are requirements, not suggestions.
 
 ## When to use
 - Building or rebuilding a landing, sales, opt-in, checkout, application, webinar registration, or thank-you page.
@@ -23,7 +23,7 @@ Layout, CTA, social proof, urgency, and friction patterns. Apply on every funnel
 - Writing the webinar script → `expert-secrets-perfect-webinar`.
 
 ## The stack defaults
-- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless Cris names it.
+- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless specified.
 - Page builds: Lovable for net-new builds, Framer for design-heavy / portfolio.
 - Hosting: Vercel.
 - Automation: n8n on the VPS via SSH node + bash wrapper.
@@ -43,7 +43,7 @@ Layout, CTA, social proof, urgency, and friction patterns. Apply on every funnel
 - No em dashes anywhere. Use commas, periods, or colons.
 - No URLs in any SMS the page triggers.
 - Never auto-send to contacts. Draft and approve.
-- Sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run via a GHL workflow. Confirm cadence with Cris.
+- Sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run via a GHL workflow. Confirm cadence before sending.
 - Outreach DMs and SMS open with: "Hi [Name], this is Alice, The AI assistant. You're getting this because you signed up for [event]." before any personalization.
 - Defensible credentials: $10M+ revenue, 1,000+ trained. Never inflate.
 
@@ -125,7 +125,7 @@ Video testimonial: required for offers over $500. 30 to 90 seconds. Caption burn
 - Real countdown: course enrollment closes, live event date, price increase date.
 - Real scarcity: "12 of 50 spots remaining" only if seats are tracked.
 - Seasonal cohort: "Enroll before [date] to join the [month] cohort."
-- Never fake. Cris will not ship fake scarcity.
+- Never fake. Never ship fake scarcity.
 
 ## Friction reduction
 

@@ -30,7 +30,7 @@ The highest converting funnel for $297 to $2,000+ offers. Education builds trust
 
 - Pages: Lovable for speed, Framer for polish, or Next.js plus Tailwind for full control. Deploy to Vercel.
 - Webinar platform: WebinarJam for live, EverWebinar for evergreen (see `evergreen-webinar-funnel`), or simple Zoom plus a hosted replay page when budget is tight.
-- Reg, forms, email, and SMS: GHL main location `[GHL_LOCATION_ID]`. Confirm with Cris before any GHL action, main or Fast Track.
+- Reg, forms, email, and SMS: GHL main location `[GHL_LOCATION_ID]`. Confirm before any GHL action, main or Fast Track.
 - Automation: n8n on the VPS via SSH using the existing Claude SSH pattern. Do not use the Anthropic API node.
 - Reminders and SMS: GHL workflows. Never put URLs in SMS, direct to email or WhatsApp.
 - Tracking: Meta Pixel and GA4 on every page. Fire `webinar_register`, `webinar_watch_25`, `webinar_watch_50`, `webinar_watch_pitch`, `cta_click`, and `purchase` events.
@@ -48,7 +48,7 @@ Sections in order:
 2. Headline (10 to 16 words), names the outcome plus the timeframe. "Free Live Masterclass: How to [Outcome] in [Timeframe]".
 3. Date and time block, with timezone toggle.
 4. 3 to 5 learning bullets (15 to 25 words each), specific outcomes not topics.
-5. Host bio block, photo plus 40 to 60 word credibility line. Pull from `cris-vinson-storybank` for any Cris bio language.
+5. Host bio block, photo plus 40 to 60 word credibility line. Pull from the storybank (`cris-vinson-storybank`) for any bio language.
 6. Registration form, name plus email. Fewer fields lift conversion.
 7. CTA button, "Reserve My Seat" or "Save My Spot".
 8. Social proof strip, 2 to 3 short past attendee quotes (30 to 50 words each).
@@ -157,11 +157,11 @@ Goal, full offer presentation for the people who need to read before they buy.
 - English only on every page, every email, every SMS.
 - No em dashes anywhere in the copy. Use commas, periods, colons, or rewrite.
 - No URLs in SMS reminders. Direct to email or WhatsApp instead.
-- No auto-send to contacts. Draft every outbound for Cris approval first.
+- No auto-send to contacts. Draft every outbound for approval first.
 - Sends over 10 contacts must drip at 1 per 30 to 60 seconds, or run via GHL workflow. Confirm cadence first.
 - Outreach DMs open with "Hi [Name], this is Alice, The AI assistant." then "You're getting this because you signed up for [event]." before personalization.
 - Defensible numbers only, $10M+ revenue, 1,000+ trained. Never $100M+ or 1,500+.
-- Voice work and any first-person Cris narrative defer to `magnetic-story` and `cris-vinson-storybank`. Do not invent biography.
+- Voice work and any first-person narrative refer to the storybank (`magnetic-story` and `cris-vinson-storybank`). Do not invent biography.
 
 ## Anti-patterns
 

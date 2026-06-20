@@ -12,7 +12,7 @@ Scored, prioritized audit of an existing funnel or page. Surfaces the gaps that 
 - About to spend on traffic and want to de-risk first.
 - Comparing two page variants and want a defensible scoring rubric.
 - Inheriting a funnel built by someone else and need a baseline.
-- Quarterly CRO sweep across multiple Cris-stack pages (Lovable, Framer, GHL forms).
+- Quarterly CRO sweep across multiple funnel pages (Lovable, Framer, GHL forms).
 
 ## When NOT to use
 - The offer itself is the problem → `product-creator` or `grand-slam-offer-architect`.
@@ -23,7 +23,7 @@ Scored, prioritized audit of an existing funnel or page. Surfaces the gaps that 
 - Designing a page from scratch → `funnel-select` first, then `conversion-ux`.
 
 ## The stack defaults
-- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless Cris names it.
+- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless specified.
 - Page builds: Lovable for net-new builds, Framer for design-heavy pages.
 - Hosting: Vercel.
 - Automation: n8n on the VPS via SSH node + bash wrapper.
@@ -44,7 +44,7 @@ Scored, prioritized audit of an existing funnel or page. Surfaces the gaps that 
 - No em dashes. Use commas, periods, or colons.
 - No URLs in any SMS.
 - Never auto-send to contacts. Draft, get approval, then send.
-- Sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run via a GHL workflow. Confirm cadence with Cris.
+- Sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run via a GHL workflow. Confirm cadence before sending.
 - Outreach DMs and SMS open with: "Hi [Name], this is Alice, The AI assistant. You're getting this because you signed up for [event]." before any personalization.
 - Defensible credentials: $10M+ revenue, 1,000+ trained. Never use $100M+ or 1,500+.
 
@@ -102,7 +102,7 @@ Score bands:
 ### 3. Social proof
 - Testimonials use real names, photos, and specific results.
 - Trust bar or "as featured in" present near the fold.
-- Number-based proof present ($10M+ revenue, 1,000+ trained for Cris — never inflate).
+- Number-based proof present ($10M+ revenue, 1,000+ trained — never inflate).
 - Proof placed within one screen of every CTA.
 - Video testimonial present for any offer over $500.
 

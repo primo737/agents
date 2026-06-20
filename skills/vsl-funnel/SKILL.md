@@ -28,7 +28,7 @@ A Video Sales Letter funnel sells through one persuasive video, then a buy butto
 
 - Pages: Lovable for speed, Framer for polish, or Next.js plus Tailwind for full control. Deploy to Vercel.
 - VSL hosting: Vimeo Pro or Wistia. Never YouTube - sidebar suggestions and ads break attention.
-- Reg, forms, email, and order capture: GHL main location `[GHL_LOCATION_ID]`. Confirm with Cris before any GHL action - main or Fast Track.
+- Reg, forms, email, and order capture: GHL main location `[GHL_LOCATION_ID]`. Confirm before any GHL action - main or Fast Track.
 - Automation: n8n on the VPS via SSH using the existing Claude SSH pattern (see `launchmap-builder-claude` reference workflow). Do not use the Anthropic API node.
 - Reminders and SMS: GHL workflows. Never put URLs in SMS - direct to email or WhatsApp.
 - Tracking: Meta Pixel and GA4 on every page. Fire a custom `vsl_25`, `vsl_50`, `vsl_75`, and `vsl_cta_visible` event from the player.
@@ -93,7 +93,7 @@ Triggered immediately after purchase. Single page, single CTA.
 2. Script outline: pull from `magnetic-story` for the story beats and from the offer skill for the stack. Confirm the One Big Domino before scripting.
 3. Page wireframe: sketch the 4 pages above in plain text with section headers and word counts.
 4. Copy: draft headline, pre-headline, button copy, proof bullets, guarantee, FAQ. Keep under word count caps.
-5. Build: Lovable for first pass. Move to Framer if Cris wants polish. Move to Next.js only if there is a custom interaction.
+5. Build: Lovable for first pass. Move to Framer if polish is needed. Move to Next.js only if there is a custom interaction.
 6. QA: test on mobile and desktop, Chrome and Safari. Verify Pixel and GA4 fire on page view, video 25 / 50 / 75 percent, CTA click, and purchase. Verify the order form submits to GHL and triggers the access email.
 7. Ship: deploy to Vercel, set the custom domain, run the smoke test purchase with a real card, refund it, confirm the refund flow.
 8. Post-launch debrief: pull the funnel report at 100 visitors, 500 visitors, and 2,000 visitors. Compare to benchmarks below. If a stage underperforms by more than 30 percent, that is the next test.
@@ -107,7 +107,7 @@ Triggered immediately after purchase. Single page, single CTA.
 - Sends over 10 contacts must drip at 1 per 30 to 60 seconds, or run via a GHL workflow. Confirm cadence before sending.
 - Outreach DMs must open with "Hi [Name], this is Alice, The AI assistant." then "You're getting this because you signed up for [event]." before personalization.
 - Defensible numbers only: $10M+ revenue, 1,000+ trained. Never $100M+ or 1,500+.
-- Voice work, story beats, and any first-person Cris narrative defer to `magnetic-story` and `cris-vinson-storybank`. Do not invent biography.
+- Voice work, story beats, and any first-person narrative refer to the storybank (`magnetic-story` and `cris-vinson-storybank`). Do not invent biography.
 
 ## Anti-patterns
 
@@ -115,7 +115,7 @@ Triggered immediately after purchase. Single page, single CTA.
 - Never autoplay video unmuted on mobile - Safari blocks it and you look broken.
 - Never embed YouTube on the VSL page. Sidebar suggestions cost conversions.
 - Never hide the close X on the upsell page.
-- Never use "doctors hate this" or other clickbait headlines for a Cris brand asset.
+- Never use "doctors hate this" or other clickbait headlines for a brand asset.
 - Never ship without Pixel and GA4 verified firing.
 - Never claim "as seen on" without a real placement.
 - Never put a phone number on the order page unless support is staffed.

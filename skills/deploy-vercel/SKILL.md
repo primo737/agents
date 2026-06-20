@@ -33,7 +33,7 @@ Vercel is the default host for The funnel pages, Lovable exports, and Next.js bu
 
 ## Process
 
-1. **Confirm scope.** Ask Cris: which project, which environment (preview vs prod), and whether a custom domain is part of this run. If a custom domain is involved and the apex is on GHL, default to subdomain routing.
+1. **Confirm scope.** Ask: which project, which environment (preview vs prod), and whether a custom domain is part of this run. If a custom domain is involved and the apex is on GHL, default to subdomain routing.
 2. **Install and auth.** `npm install -g vercel`, then `vercel login` (browser flow). Verify with `vercel whoami`.
 3. **Link or init.** From the project directory, run `vercel link` to attach to an existing Vercel project, or `vercel` to create one. Vercel auto-detects Next.js, Vite, CRA, Astro, and static HTML.
 4. **Set env vars BEFORE first prod deploy.** For each required key: `vercel env add KEY_NAME production` (also add to `preview` and `development` as needed). Pull locally for dev with `vercel env pull .env.local`.
@@ -47,7 +47,7 @@ Vercel is the default host for The funnel pages, Lovable exports, and Next.js bu
 - No URLs in SMS. If a deploy URL needs to ship to a contact, send it via email or WhatsApp instead.
 - No auto-send to contacts. Draft any deploy-announcement message for The approval before sending.
 - English only. No Tagalog/Taglish in any deploy comms or commit messages that go to contacts.
-- No em dashes in any Cris-facing copy generated around the deploy (release notes, announcement, etc.).
+- No em dashes in any client-facing copy generated around the deploy (release notes, announcement, etc.).
 - Always confirm GHL location before any action that touches GHL (main vs Fast Track). Default is main; Fast Track only if Use "Fast Track" by name.
 
 ## Anti-patterns
@@ -56,7 +56,7 @@ Vercel is the default host for The funnel pages, Lovable exports, and Next.js bu
 - Never push secrets to git. Use `vercel env add`, never commit `.env`.
 - Never deploy to prod without `vercel --prod`. A bare `vercel` builds a preview, not production.
 - Never assume DNS propagation is instant. Always verify with `dig` and a fresh `curl -I`.
-- Never run `vercel rm` or remove a domain without explicit confirmation from Cris in the same session.
+- Never run `vercel rm` or remove a domain without explicit confirmation in the same session.
 - Never skip the env-var step and discover at runtime that GHL or Stripe calls fail in prod.
 
 ## Templates and examples
@@ -123,7 +123,7 @@ vercel --prod
 }
 ```
 
-### Env var checklist for a Cris funnel
+### Env var checklist for a funnel
 
 | Key | Env | Source |
 |---|---|---|

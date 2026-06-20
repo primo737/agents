@@ -1,6 +1,6 @@
 ---
 name: ai-hour-session-framework
-description: Build a runnable session framework + Halibut-generated agent prompt for the next AI Hour cohort, using transcripts and case studies from the Obsidian vault. Use this skill whenever Cris asks to "turn AI Hour into a framework", "build the next AI Hour playbook", "make a facilitator co-pilot", "extract the teaching architecture from the transcripts", "design the next AI Business Hour session", or any variant where the input is past-cohort transcripts/case studies and the output is a session framework, facilitator playbook, or AI agent that helps run the next session. Trigger even if Cris doesn't say "framework" or "skill" by name — if the request involves AI Hour transcripts and forward planning for a next session, this is the right tool.
+description: Build a runnable session framework + Halibut-generated agent prompt for the next AI Hour cohort, using transcripts and case studies from the Obsidian vault. Use this skill when someone asks to "turn AI Hour into a framework", "build the next AI Hour playbook", "make a facilitator co-pilot", "extract the teaching architecture from the transcripts", "design the next AI Business Hour session", or any variant where the input is past-cohort transcripts/case studies and the output is a session framework, facilitator playbook, or AI agent that helps run the next session. Trigger even if the user doesn't say "framework" or "skill" by name — if the request involves AI Hour transcripts and forward planning for a next session, this is the right tool.
 ---
 
 # AI Hour Session Framework Builder
@@ -16,7 +16,7 @@ The skill exists because The case-study and takeaways docs already mine the room
 
 Trigger this skill when:
 - A past cohort has 4-part transcripts in `5. Content Programs/AI Business Hour Davao/Transcripts/`
-- Cris is preparing the *next* cohort and wants a runnable facilitator structure, not just messaging
+- The facilitator is preparing the *next* cohort and wants a runnable facilitator structure, not just messaging
 - The user asks for "framework", "playbook", "facilitator agent", "next session structure", or refers to AI Hour and a future date
 - The request involves both extracting patterns from transcripts AND producing a Claude agent prompt
 
@@ -32,7 +32,7 @@ The skill needs to know:
 2. **Next-session target** — what cohort the framework is *for* (date and/or city). This shapes Section 10 (iteration list) — different rooms need different bets.
 3. **Tier focus (optional)** — which Skill Tree tier the next session targets (Awareness / Application / Automation / Mastery). If unspecified, infer from the curriculum gap analysis.
 
-If Cris hasn't named these, ask in one shot — don't ping-pong. Per his standing memory, skip the funnel-onboarding questionnaire pattern: ask only what's actually missing.
+If these aren't named, ask in one shot — don't ping-pong. Skip the funnel-onboarding questionnaire pattern: ask only what's actually missing.
 
 ## Workflow — Agent Teams in Sequence
 
@@ -80,7 +80,7 @@ Run a single QA agent against the assembled file. Required gates, with the memor
 | No em dashes (`—`) in body copy | `feedback_no_em_dashes` | Reads as AI-generated |
 | English only outside cited quotes | `feedback_english_only` | Tagalog/Taglish breaks The outbound voice |
 | Credentials = $10M+ revenue / 1,000+ trained | `project_cris_credential_numbers` | Older $100M+/1,500+ numbers are not defensible |
-| No "free signup" framing for Nas.com; current Cris cost ₱5,500/mo | `project_nas_io_plan` | Nas has no free plan as of 2026-04-20 |
+| No "free signup" framing for Nas.com; current cost ₱5,500/mo | `project_nas_io_plan` | Nas has no free plan as of 2026-04-20 |
 | Agent prompt does NOT instruct auto-send to GHL contacts | `feedback_no_auto_send` | Every outbound must be drafted for approval |
 | No certificate / "alumni" / "graduate of" language | May 16 takeaways §6 | Positioning is operators, not collectors |
 | Halibut prompt is runnable as an agent (role + modes + rules + anchors + style) | structural | Otherwise Part B is just notes |

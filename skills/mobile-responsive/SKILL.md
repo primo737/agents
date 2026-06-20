@@ -5,7 +5,7 @@ description: Mobile-first responsive patterns for funnel pages — breakpoints, 
 
 # Mobile-Responsive
 
-Mobile-first patterns for every Cris funnel page. Over 60% of traffic is mobile. Build mobile first, then scale up. Every Lovable, Framer, or GHL page must clear this checklist before traffic.
+Mobile-first patterns for every funnel page. Over 60% of traffic is mobile. Build mobile first, then scale up. Every Lovable, Framer, or GHL page must clear this checklist before traffic.
 
 ## When to use
 - Building a new page in Lovable, Framer, or GHL.
@@ -24,7 +24,7 @@ Mobile-first patterns for every Cris funnel page. Over 60% of traffic is mobile.
 - Webinar SCRIPT → `expert-secrets-perfect-webinar`.
 
 ## The stack defaults
-- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless Cris names it.
+- CRM, email, SMS, forms, calendars, workflows: GHL (main location `[GHL_LOCATION_ID]`). Fast Track is a separate sub-account — never touch unless specified.
 - Page builds: Lovable for net-new, Framer for design-heavy.
 - Hosting: Vercel.
 - Automation: n8n on the VPS via SSH node + bash wrapper.
@@ -42,7 +42,7 @@ Mobile-first patterns for every Cris funnel page. Over 60% of traffic is mobile.
 
 ## Brand voice rules (always apply)
 - English only on every label.
-- No em dashes anywhere in Cris-facing copy. Use commas, periods, or colons.
+- No em dashes anywhere in client-facing copy. Use commas, periods, or colons.
 - No URLs in any SMS the page triggers.
 - Never auto-send to contacts. Draft and approve.
 - Sends greater than 10 contacts must be dripped at 1 per 30 to 60 seconds, or run via a GHL workflow.
