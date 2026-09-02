@@ -477,6 +477,15 @@ Build a personal story bank and hook engine: 7 arc types, 10-story template, voi
 
 ---
 
+#### `epiphany-bridge`
+Expert Secrets belief-change story framework: Backstory, Crisis, Epiphany, Result, Offer. Writes and audits the arc so the reader inherits the shift instead of reading a testimonial.
+
+**Use when:** Webinar open, VSL open, long-form sales letter lead, belief-change email sequence. Any place a false belief has to break before the offer can land. Requires a real lived shift as input.
+
+**Say:** _"epiphany bridge"_ · _"belief change story"_ · _"break their false belief"_ · _"story that sells the mechanism"_ · _"write my origin story for the webinar"_
+
+---
+
 #### `show-not-tell`
 Rewrite copy by replacing labels and summaries with scenes, moments, and sensory details. Reader arrives at conclusions through experience.
 
