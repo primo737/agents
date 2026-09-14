@@ -486,6 +486,32 @@ Expert Secrets belief-change story framework: Backstory, Crisis, Epiphany, Resul
 
 ---
 
+#### `expert-secrets-perfect-webinar`
+Perfect Webinar presentation script from Expert Secrets Secrets #11–15: Stack Slide, the 4-part structure, The One Thing intro, breaking and rebuilding the three false beliefs, and the Stack close. Each secret produces a Markdown artifact that stacks into the full script.
+
+**Use when:** You need the selling presentation itself: webinar, VSL, teleseminar, or stage pitch. Building the offer stack or the close.
+
+**Skip when:** You need the pages around the webinar (registration page, invite emails) — use `perfect-webinar-copywriter` or `webinar-funnel`.
+
+**Intake required:** Asks 2–4 questions per secret before generating that secret's artifact.
+
+**Say:** _"perfect webinar"_ · _"webinar script"_ · _"build my stack slide"_ · _"write my webinar close"_ · _"help me write my webinar"_ · _"selling from stage"_
+
+---
+
+#### `perfect-webinar-copywriter`
+Full Perfect Webinar funnel copy, beginner-friendly: origin story, webinar script (hook, story, three secrets, offer, stack), slide outline and the 16 closes, registration page and opt-in video script, squeeze page, and live-event invitation email sequence.
+
+**Use when:** Building the whole webinar funnel from a blank page, or any single piece of it — "I just need the registration page" works. Good for users with no copywriting experience.
+
+**Skip when:** You only need the presentation script in Expert Secrets form — use `expert-secrets-perfect-webinar`. You need the funnel page structure and tech, not the copy — use `webinar-funnel`.
+
+**Intake required:** Each step runs its own intake (14 origin-story questions, 11 opt-in variables, 22 invite-sequence variables), asked a few at a time.
+
+**Say:** _"perfect webinar copy"_ · _"write my webinar registration page"_ · _"webinar invite emails"_ · _"16 closes"_ · _"origin story for my webinar"_ · _"fill my webinar"_
+
+---
+
 #### `show-not-tell`
 Rewrite copy by replacing labels and summaries with scenes, moments, and sensory details. Reader arrives at conclusions through experience.
 
