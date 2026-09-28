@@ -1,10 +1,16 @@
 # Prompt Engineering Techniques Reference
 
+These fifteen patterns are a teaching catalogue, not mutually exclusive categories or a
+requirement to use every technique. Examples are illustrative requests, not verified evidence.
+Choose for the user's task and actual receiver. Never import example identities, facts, personal
+preferences, or tool capabilities into another user's prompt. Preserve the active objective and
+constraints across follow-ups unless the user supersedes them.
+
 ## Table of Contents
 1. Instructional Prompts
 2. Contextual Prompts
 3. Few-shot Learning Prompts
-4. Chain of Thought Prompts
+4. Reasoning Support and Checkable Explanations
 5. Zero-shot Learning Prompts
 6. Multi-step / Complex Prompts
 7. Role-based Prompts
@@ -74,13 +80,14 @@ email to the CEO outlining key risks and mitigation strategies."
 
 ## 3. Few-shot Learning Prompts
 
-Provide 1-5 examples of desired output to teach the AI the pattern, style, or format you want.
+Provide relevant examples to demonstrate the behavior, style, or format you want. Two or three
+are a starting heuristic, not a minimum or ceiling; test their contribution for the receiver.
 
 **When to use:** When you need consistent style across outputs, customer support responses,
 product descriptions, social media posts, job descriptions — any task where showing beats telling.
 
 **Key elements:**
-- 2-5 clear, consistent examples
+- Clear examples with consistent intended behavior and varied relevant situations
 - Explicit pattern for the AI to follow
 - New task stated clearly after the examples
 
@@ -95,38 +102,44 @@ Write a product description for noise-canceling headphones.
 **Best practices:**
 - Choose high-quality, error-free examples
 - Keep examples consistent in structure and tone
-- Cover edge cases if you want the AI to handle variety
+- Cover meaningful distinctions without accumulating redundant examples
+- For voice work, use real source examples and annotate approved/rejected pairs when available
 - Set a clear pattern, then clearly state the new task
 - Limit examples to relevant details — don't overload
 
 ---
 
-## 4. Chain of Thought Prompts
+## 4. Reasoning Support and Checkable Explanations
 
-Ask the AI to break down its reasoning step by step before arriving at an answer.
+Distinguish model reasoning configuration from the explanation the user needs. Native reasoning
+models often do not need a prescribed internal reasoning script. Non-reasoning receivers and
+some tasks can benefit from decomposition; evaluate this with the actual model and task.
 
-**When to use:** Math problems, logical reasoning, decision-making, complex analysis,
-teaching/tutoring, any task where showing the work matters.
+**When to use:** Complex analysis, troubleshooting, calculations, comparisons, and teaching
+where evidence or inspectable solution steps help the user assess the answer.
 
 **Key elements:**
-- Explicit request for step-by-step explanation
-- Logical sequence of reasoning
-- Transparency in how the answer was reached
+- A clear decision or problem, relevant evidence, constraints, and success criteria
+- Appropriate reasoning effort if the receiver exposes that setting and it is known
+- A concise rationale, cited evidence, worked calculation, or procedure where requested
+- A check against the actual task, not a claim that an explanation proves correctness
 
-**Example:** "You need to decide between investing in Company A (high growth, high risk) or
-Company B (stable, slower growth). Explain your decision-making process step by step."
+**Example:** "Compare the two supplied project proposals against cost, delivery risk, and
+maintainability. Recommend one, cite the supporting passages, and state the main uncertainty."
 
 **Best practices:**
-- Explicitly ask for step-by-step reasoning
-- Request explanations in logical order
-- Use for complex tasks that benefit from visible reasoning
-- Especially valuable for teaching, analysis, and problem-solving
+- Do not demand private chain-of-thought, hidden deliberation, or a transcript of internal reasoning
+- Request checkable conclusions and explanation appropriate to the audience
+- Keep ordered task steps when order matters; those are not a mandate for internal reasoning
+- Do not claim reasoning prompts always help or always harm generation
+- Treat persuasive explanations as claims to verify, not proof of faithful internal reasoning
 
 ---
 
 ## 5. Zero-shot Learning Prompts
 
-Ask the AI to handle a task with no examples or guidance — relying entirely on its training.
+Ask the AI to handle a task without demonstration examples. Instructions, supplied sources,
+and retrieval tools can still be part of a zero-shot prompt.
 
 **When to use:** Simple factual questions, basic translations, definitions, straightforward
 summarization — tasks where the AI already knows what to do.
@@ -134,15 +147,15 @@ summarization — tasks where the AI already knows what to do.
 **Key elements:**
 - No examples provided
 - Clear, direct question or task
-- Relies on the AI's existing knowledge
+- May use supplied context or tools when available and relevant
 
 **Example:** "Translate 'I love ice cream' into Spanish." / "What is a black hole?"
 
 **Best practices:**
 - Use for simple, well-defined tasks
 - Ask direct questions — ambiguity leads to poor results
-- Works best when the task falls squarely within the AI's training data
-- If results are weak, upgrade to few-shot or instructional prompting
+- Verify factual claims against sources when accuracy or freshness requires it
+- If results are weak, diagnose missing context or constraints and test whether examples help
 
 ---
 
@@ -278,6 +291,7 @@ Fill this in for a wireless Bluetooth speaker.
 - Make templates clear with obvious placeholders
 - Ideal for repetitive tasks
 - Allow customization within the template structure
+- Distinguish a reusable template from a runnable instance; never invent missing prices or features
 
 ---
 
@@ -298,7 +312,7 @@ employee's perspective."
 
 **Best practices:**
 - Avoid leading questions that suggest a viewpoint
-- Ask for both sides of an issue
+- Represent relevant perspectives in proportion to evidence; do not force false balance
 - Focus on facts and evidence-based content
 
 ---
@@ -364,7 +378,8 @@ help me track my order?' Engage in a conversation to assist them."
 
 **Best practices:**
 - Frame in natural language — "talk about" not "provide information on"
-- Encourage follow-up questions to keep flow going
+- Ask follow-up questions when they resolve meaningful gaps, not simply to prolong the exchange
+- Track the audience separately from the receiver running the simulation
 - Best for simulating real-world interactions
 
 ---
@@ -376,11 +391,20 @@ help me track my order?' Engage in a conversation to assist them."
 | Simple content | Instructional | Constrained |
 | Consistent style | Few-shot | Template-based |
 | Expert perspective | Role-based | Contextual |
-| Complex analysis | Chain of Thought | Multi-step |
+| Complex analysis | Contextual + reasoning support | Multi-step when order matters |
 | Quick factual answer | Zero-shot | Clarifying |
 | Multiple options evaluated | Comparative | Problem-solving |
 | Balanced/sensitive topic | Bias-reduction | Contextual |
 | Original/artistic content | Creative | Role-based |
-| Real-world challenge | Problem-solving | Chain of Thought |
+| Real-world challenge | Problem-solving | Evidence and checkable rationale |
 | Interactive simulation | Conversational | Role-based |
 | Building on prior response | Clarifying | Multi-step |
+
+
+## Evidence and interpretation
+
+Reviewed 2026-09-28. These are model/task-qualified patterns, not measured guarantees for this skill.
+- Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), living documentation: examples and ordered procedures remain useful; reasoning guidance depends on configuration.
+- OpenAI, [Reasoning best practices](https://platform.openai.com/docs/guides/reasoning-best-practices), living documentation: do not assume traditional step-by-step prompting transfers unchanged to reasoning models.
+- Anthropic, [Bloom](https://alignment.anthropic.com/2025/bloom-auto-evals/), 2025-12-19: example-count effects varied across behavioral evaluation tasks; this does not establish an optimal count for interviewing.
+- Anthropic, [Reasoning models do not always say what they think](https://www.anthropic.com/research/reasoning-models-dont-say-think), 2025-04-03: faithfulness limitations in specific hint-based experiments, not proof that reasoning is useless.

@@ -1,287 +1,189 @@
-# AI Language Quality & Humanization Framework
+# Language Quality and Voice Reference
 
-Read this reference BEFORE generating any final copy output. This framework ensures output
-sounds authentically human and passes detection scrutiny.
+Use for final prose when voice or editorial quality matters. For technical, structured, or purely
+factual output, apply only relevant clarity and correctness checks. Voice profiling is optional.
+This is an editorial framework, not an AI detector or a promise of undetectability.
 
-## Table of Contents
-1. Banned Words & Phrases
-2. Structural Tells to Avoid
-3. Tone & Rhythm Rules
-4. Brand Voice Extraction (When Applicable)
-5. Anti-Repetition Framework
-6. The 16-Point Naturalness Scorecard
-7. Content-Type Checklists
-8. Before/After Examples
+## Contents
+1. Factual and compliance gates
+2. Source-grounded voice extraction
+3. Words, structure, and rhythm
+4. Sequence consistency and repetition
+5. The 16-point editorial scorecard
+6. Content-type checks
+7. Annotated before/after examples
+8. Evidence notes
 
----
+## 1. Factual and compliance gates
 
-## 1. Banned Words & Phrases
+Pass these before scoring style. Any failure blocks delivery until corrected or the limitation
+is made explicit in an appropriately scoped output; a high editorial score cannot compensate.
 
-These words trigger immediate AI detection. Never use them in final output:
+- Facts, quotes, numbers, credentials, testimonials, identities, dates, and personal stories are
+  traceable to supplied or verified sources. Do not invent specificity to improve the prose.
+- Distinguish verified facts, reasonable labeled assumptions, fiction, and unknowns. Preserve
+  uncertainty that changes the meaning; do not remove it merely to sound confident.
+- Meet applicable user constraints, task boundaries, required content, and output format.
+- Respect source and identity boundaries: no borrowing another person's biography, another
+  client's proof, or another brand's voice as if it belonged to the requested speaker.
+- Follow the actual authorization for external actions. A draft is not permission to send it.
 
-**Banned words:**
-delve, tapestry, realm, harness, unlock, leverage, seamless, robust, cutting-edge, revolutionary,
-game-changer, transformative, holistic, synergy, paradigm, pivotal, meticulous, unprecedented,
-elevate, streamline, empower, optimize, scalable, groundbreaking, pioneering, trailblazing,
-unleash, frictionless, comprehensive, supercharge, turbocharge, unparalleled, next-gen,
-future-proof, hyper-personalized
+No global language, punctuation, credentials, palette, or personal style is supplied here.
+Apply only preferences relevant to this user, speaker, audience, and task.
 
-**Banned marketing phrases:**
-- "Take your [X] to the next level"
-- "Unlock your potential"
-- "In today's fast-paced world"
-- "Transform your [business/results/life]"
-- "Skyrocket your [conversions/sales]"
-- "Comprehensive suite of solutions"
-- "Robust features"
-- "Premier/leading solution"
-- "It's not about X — it's about Y"
+## 2. Source-grounded voice extraction
 
-**Banned transitional phrases (limit to 1 per paragraph max):**
-Moreover, furthermore, additionally, consequently, "it's important to note that,"
-"building on this point," "with that in mind," "in light of this," "as such,"
-"by the same token"
+Use when the user requests a specific person's/brand's voice or a recurring voice profile would
+materially help. A routine factual answer does not need an intake or profile.
 
-**Banned formula patterns:**
-- "In a world where [scary change], [virtue] becomes [advantage]"
-- "Most people [lazy thing]. The few who win [disciplined thing]."
-- "Stop doing X, start doing Y"
-- "Not this, not that, but this" (fake triple)
-- "The real work is..." / "The real game isn't..."
+Read actual representative writing or transcripts. Record the identity, source path or URL,
+date/version when known, medium, and intended audience. Do not infer private beliefs or a full
+personality from a small sample. Describe observations as provisional when evidence is thin.
 
----
-
-## 2. Structural Tells to Avoid
-
-**Paragraph uniformity:** AI produces paragraphs of identical length. Vary between 1-6
-sentences per paragraph. A one-sentence paragraph hits differently than a five-sentence one.
-
-**Sentence rhythm flatness:** AI averages 15-20 words per sentence consistently. Human writing
-mixes 5-word punches with 30-word flowing sentences. Apply the Gary Provost principle:
-"This sentence has five words. Here are five more words. Five-word sentences are fine.
-But several together become monotonous. Listen. I vary the sentence length, and I create music."
-
-**List dependency:** AI defaults to bullet points for everything. Use narrative paragraphs.
-Maximum 2 bullet-point sections per piece, each with 3-5 items — unless the user specifically
-requested list format.
-
-**Em dash overuse:** AI uses em dashes at 3-5x the human rate. Limit to 1-2 per piece.
-Replace with commas, parentheses, or restructured sentences.
-
-**Identical sentence openers:** Never start more than 2 sentences with the same word.
-Especially watch for "The," "It," "This," and "I" repetition.
-
----
-
-## 3. Tone & Rhythm Rules
-
-**Emotional variation:** Don't maintain a flat emotional register. Effective copy escalates,
-retreats, surprises. Frustration in problem sections. Excitement in solution reveals.
-Calm authority in proof sections.
-
-**Kill compulsive hedging:** Delete "may," "might," "could potentially," "generally speaking,"
-"in many cases." Marketing copy requires conviction. Only hedge when genuine uncertainty exists.
-
-**Avoid excessive balance:** AI presents "both sides" reflexively. Sales copy and persuasive
-content take positions. Only use balance in bias-reduction prompts.
-
-**Always use contractions:** "You'll" not "you will." "It's" not "it is." "Don't" not "do not."
-Missing contractions is a primary AI tell.
-
-**Conversational markers (use naturally):**
-"Here's the thing." "Look." "The truth is." "Sound familiar?" "Here's why that matters."
-These create natural flow without sounding robotic.
-
-**Strategic imperfection:**
-- Start sentences with "And" or "But" occasionally
-- Use fragments for emphasis. Like this.
-- Include parenthetical asides (they add personality)
-- Occasional sound words: "ugh," "yep," "ouch" — when the tone calls for it
-
-**Specificity over generality:**
-- Replace "many businesses" → "47 SaaS companies"
-- Replace "significant improvement" → "2.4x increase in 30 days"
-- Replace "our satisfied customers" → "Sarah runs a bakery in Austin. Here's what happened:"
-- Concrete details signal human authorship
-
----
-
-## 4. Brand Voice Extraction (When Applicable)
-
-If the user has a specific brand voice, capture it across four dimensions:
-
-| Dimension | Spectrum |
-|-----------|----------|
-| **Formality** | Formal ←→ Casual |
-| **Humor** | Serious ←→ Funny |
-| **Convention** | Respectful ←→ Irreverent |
-| **Energy** | Matter-of-fact ←→ Enthusiastic |
-
-**Voice stays constant. Tone flexes by context:**
-
-| Content Type | Tone Adjustment |
+| Dimension | What to observe |
 |---|---|
-| Social media | More casual, personality-forward, shorter |
-| Email marketing | Personal, direct, conversational |
-| Blog posts | Authoritative but approachable |
-| Sales pages | Energetic, benefit-focused, persuasive |
-| Customer support | Empathetic, solution-oriented |
+| Formality | Register, contractions, terminology, and audience relationship |
+| Rhythm | Sentence and paragraph patterns that serve the message |
+| Humor | Presence, kind, and contexts where it is absent |
+| Directness | How requests, disagreement, uncertainty, and conclusions are expressed |
+| Energy | How tone changes across teaching, persuasion, support, or reflection |
+| Vocabulary | Repeated phrases, preferred terms, and explicitly rejected wording |
 
-**If the user provides sample content**, extract:
-- Personality adjectives (3-4 defining traits)
-- Signature phrases they use repeatedly
-- Words they never use
-- Punctuation quirks
-- Average sentence length and reading level
+Separate stable voice choices from the tone of a specific occasion. Preserve facts and meaning
+before mimicking surface features. A quotation must remain an accurate quotation.
+Approval of an example's style does not establish its factual claims. Do not turn a style-only
+or illustrative sample into biography, proof, or a current offer. Use those details only when
+the material is also supplied as factual evidence for the current speaker and task.
 
----
+When available, keep approved/rejected example pairs with brief annotations:
+- Identity and source/date; whether approval came from the user or is only an inference.
+- The relevant excerpt or pair, kept short and faithful.
+- What the user approved/rejected and the transferable principle, not an invented rationale.
+- Where the principle applies: channel, audience, or content type.
 
-## 5. Anti-Repetition Framework
+Two or three relevant examples are a starting heuristic. Do not invent samples or demand a fixed
+count. If sources are missing, use the requested tone with a stated limitation; ask for a sample
+only when matching that specific voice is central and otherwise unsupported. Do not save a
+persistent voice profile unless saving is requested or part of the authorized deliverable.
 
-### Framework Rotation (for sequences/campaigns)
-Never use the same copywriting framework twice in succession:
-- **AIDA:** Attention → Interest → Desire → Action
-- **PAS:** Problem → Agitate → Solution
-- **Hook-Story-Offer**
-- **BAB:** Before → After → Bridge
-- **PPPP:** Promise → Picture → Proof → Push
+## 3. Words, structure, and rhythm
 
-### Hook Type Rotation
-Track and rotate through these categories:
-1. Question hooks ("Why do most landing pages convert under 2%?")
-2. Statistic hooks ("47% of buyers view 3-5 pieces of content before engaging")
-3. Story hooks ("Last Tuesday, Sarah hit send on her 47th cold email...")
-4. Contrarian hooks ("Email marketing isn't dead. YOUR email marketing is dead.")
-5. Promise hooks ("Lose 30 lbs without giving up foods you love")
-6. Empathy hooks ("If you're reading this, you've probably tried everything")
-7. Curiosity gap hooks ("The one metric nobody tracks — that predicts 90% of churn")
+Treat these as contextual editing prompts, not universal bans or evidence of authorship.
 
-### CTA Variation
-Rotate call-to-action phrasing:
-- Direct imperatives: "Buy now," "Start today"
-- First-person CTAs: "Start my free trial" (90% higher conversion than "Start your free trial")
-- Question CTAs: "Ready to get started?"
-- Value-reinforcing: "Show me how to double my conversions"
-- Soft CTAs: "Learn more," "See how it works"
-- Urgency CTAs: "Claim your spot before Friday"
+**Vague promotional language:** Words such as “revolutionary,” “seamless,” “game-changer,” and
+“comprehensive” may be empty if they replace a concrete benefit. Keep legitimate technical terms,
+accurate quotations, or language the user intentionally chose. Prefer a specific supported claim.
 
-### Opening Line Rules
-- Never repeat an opening structure within 60 days for the same client
-- Rotate: direct address, question, story, statistic, contrarian, promise
+**Formulaic phrases:** Review openings such as “In today's fast-paced world” or “unlock your
+potential.” Replace them when they obscure the actual audience situation. Do not replace one
+formula with another stock conversational phrase.
 
----
+**Rhythm:** Read for clarity and flow. Vary sentence or paragraph length when it improves reading;
+do not enforce artificial word-count distributions, fragments, typos, or grammatical mistakes.
 
-## 6. The 16-Point Naturalness Scorecard
+**Structure:** Use lists for genuinely parallel items, steps, or comparisons; prose for connected
+reasoning. No fixed number of bullets, transitions, em dashes, or identical sentence openers
+applies across all outputs. Follow the user's explicit formatting and punctuation requirements.
 
-Score each piece before delivery. Target 13+ out of 16.
+**Tone:** Contractions, humor, fragments, warmth, urgency, and emotional variation are choices
+for the audience and medium. They are not universal markers of human writing. Keep balanced
+analysis when warranted and persuasive focus when requested, without disguising uncertainty.
 
-**Accuracy (3 points)**
-- Free from factual errors and AI hallucinations → /1
-- Contains natural human variation (not perfect grammar everywhere) → /1
-- Meets technical requirements (format, length, SEO if applicable) → /1
+**Specificity:** Use details the sources support. Replace an abstract claim with its actual
+mechanism or a verified example, not an invented number, named customer, or anecdote.
 
-**Clarity (3 points)**
-- Logical structure with compelling argument → /1
-- Point obvious from start and throughout → /1
-- Every sentence easy to read with varied structure → /1
+## 4. Sequence consistency and repetition
 
-**Authority (3 points)**
-- Appropriate technical terms for audience level → /1
-- Claims supported by specific evidence or details → /1
-- Free from waffle, hyperbole, clichés, and AI buzzwords → /1
+For sequences, read available preceding pieces before assessing repetition. If history is
+unavailable, do not claim to have checked a campaign-wide period.
 
-**Empathy (3 points)**
-- Evidence writer understands target audience → /1
-- Avoids assumptions about audience → /1
-- Content and tone appropriate to audience knowledge → /1
+Vary angles, openings, evidence, and calls to action when repetition reduces usefulness. Preserve
+repeated wording when consistency, accessibility, recognition, or an explicit requirement calls
+for it. Frameworks such as AIDA, PAS, Hook-Story-Offer, and Before-After-Bridge are options, not a
+mandatory rotation. There is no automatic 60-day rule or guaranteed conversion lift here.
 
-**Humanization (4 points)**
-- Offers original insight or value (not generic) → /1
-- Written in authentic brand voice → /1
-- Engaging, enjoyable, incites action → /1
-- Free from detectable AI patterns and tells → /1
+Ground urgency, scarcity, outcome promises, and statistics in current evidence. Do not invent
+numbers to create a stronger hook. Match each CTA to the actual next action and audience.
 
-**Scoring thresholds:**
-- 16/16: Ready to deliver
-- 13-15: Minor revisions needed
-- 10-12: Significant humanization required
-- Below 10: Rewrite
+## 5. The 16-point editorial scorecard
 
----
+After the hard gates pass, score applicable items 0 or 1. Mark irrelevant items N/A and report
+points earned / applicable points, not a forced score out of 16. This is an editorial aid, not a
+validated scientific scale, authorship test, or substitute for user feedback. Revise material
+weaknesses; do not present a threshold as proof of naturalness.
 
-## 7. Content-Type Checklists
+**Clarity: 4 checks**
+1. Main purpose is clear.
+2. Organization fits how the audience will use the result.
+3. Sentences are understandable without unnecessary effort.
+4. Required terminology is explained or used at the audience's level.
 
-### Email Marketing
-- Subject line has personality — not generic
-- Opening line is NOT "I hope this finds you well"
-- Conversational tone with contractions throughout
-- Personal stories or specific examples included
-- Sentence length varies (short punchy + longer flowing)
-- CTA is clear, uses first-person when appropriate
-- No more than 1 transitional phrase per paragraph
-- Em dashes limited to 1-2 maximum
+**Usefulness: 4 checks**
+5. Content addresses the actual audience's situation.
+6. Detail is sufficient for the requested decision or action.
+7. Examples or explanations add substance when needed.
+8. Each section contributes rather than repeating earlier material.
 
-### Landing Pages
-- Headline is specific and outcome-focused
-- Subheadline provides unique angle or specific benefit
-- Social proof is genuine with specific details (names, numbers, outcomes)
-- Bullet points vary in length and structure
-- FAQs address real objections in customer language
-- CTAs use varied phrasing throughout page
-- No repetitive sentence structures
-- Benefits include specific numbers and timeframes
+**Voice and tone: 4 checks**
+9. Voice matches verified samples or the requested tone, within stated evidence limits.
+10. Tone fits the medium and relationship.
+11. Language preserves the speaker's meaning and identity.
+12. Stylistic choices feel coherent rather than mechanically varied.
 
-### Sales Funnel Sequences
-- Each email has distinct voice/angle (not template-like)
-- Progressive narrative builds on previous emails
-- Personal stories are detailed and specific
-- Different opening hooks across the sequence
-- Framework varies across emails (AIDA → PAS → Hook-Story-Offer)
-- Voice consistency maintained throughout
+**Editorial finish: 4 checks**
+13. Opening reaches the relevant point without unnecessary setup.
+14. Transitions help the reader follow the argument.
+15. Formatting and rhythm serve readability.
+16. Ending provides the requested conclusion or next action without an unwanted sales pitch.
 
-### Ad Copy
-- Hook is specific and intriguing
-- Language matches audience slang/vernacular
-- Emotional trigger is authentic
-- CTA feels urgent but not formulaic
-- No AI filler phrases
-- Character count optimized for platform
+Report hard-gate results separately when an audit/scorecard is requested. For ordinary copy,
+keep review unobtrusive unless the user asks for the score.
 
-### Blog Posts / Articles
-- Opening line is punchy — under 10 words
-- First paragraph hooks the reader (no throat-clearing)
-- Subheadings add value, not just organize
-- Examples are specific and concrete
-- Tone stays consistent but energy varies
-- Conclusion drives action or provokes thought — doesn't just summarize
+## 6. Content-type checks
 
----
+Use the relevant subset rather than imposing marketing conventions on every task.
 
-## 8. Before/After Examples
+- **Email:** Relationship and reason for contact are clear; subject and CTA fit the purpose;
+  personalization uses real context. Personal stories and contractions are optional.
+- **Landing page:** Headline and benefits match the actual offer; proof and outcomes are sourced;
+  objections and next steps are meaningful. Unsupported numbers are never a requirement.
+- **Sequence:** Each piece adds a useful angle while maintaining continuity and voice.
+- **Ad:** Audience, platform limits, supported promise, and actual CTA are aligned. Urgency and
+  vernacular apply only when supported and appropriate.
+- **Article:** The opening orients the reader; sections develop the argument; examples are sourced
+  or clearly hypothetical; the ending fits the article's purpose. No universal ten-word opener.
+- **Technical/factual response:** Precision, evidence, reproducibility, and necessary uncertainty
+  take priority over personality, conversational flourishes, or persuasion.
 
-**Email opening:**
-- AI: "In today's fast-paced digital landscape, businesses are constantly seeking innovative
-  solutions to stay ahead of the competition."
-- Human: "Last week, I watched a client's campaign tank. Here's what I learned."
+## 7. Annotated before/after examples
 
-**Value statement:**
-- AI: "Our comprehensive platform offers a wide range of features designed to optimize your
-  workflow and enhance productivity."
-- Human: "Three clicks. That's all it takes to build a landing page that converts at 12%+."
+These are illustrative editorial pairs, not samples approved by a real speaker and not an
+assertion that one version was written by AI. They carry no transferable biographical facts.
 
-**Call to action:**
-- AI: "Take the next step in your journey toward success by scheduling a consultation today."
-- Human: "Got 15 minutes this week? Let's figure out if this makes sense for you."
+**Opening**
+- Less useful: “In today's fast-paced digital landscape, teams face many challenges.”
+- More direct: “The team needs a decision on which launch tasks to postpone.”
+- Why: Names the task. Use only when this is the actual situation.
 
-**Testimonial introduction:**
-- AI: "Our satisfied customers have experienced remarkable results."
-- Human: "Sarah runs a bakery in Austin. Here's what happened 90 days after she joined:"
+**Value statement**
+- Less useful: “Our comprehensive platform optimizes your workflow.”
+- More specific: “The platform puts incoming requests and their assigned owners in one view.”
+- Why: Describes a mechanism, provided that the product actually has this feature.
 
-**Problem statement:**
-- AI: "Many professionals struggle with the challenges of managing their time effectively
-  in an increasingly demanding work environment."
-- Human: "You've got 47 unread emails. Three meetings back-to-back. And your actual work?
-  Still sitting untouched on your desk."
+**CTA**
+- Less direct: “Take the next step in your journey toward success.”
+- More direct: “Review the proposal and mark anything that needs changing.”
+- Why: States a concrete next action appropriate to a proposal review.
 
-**The pattern:** Replace abstract generalities with specific, concrete, human details.
-Replace passive observation with active storytelling. Replace hedge words with conviction.
+**Unsupported proof**
+- Rejected: “Customers doubled their results in 30 days.”
+- Acceptable handling: Omit the claim until evidence is available, or accurately describe the
+  documented result with its source and relevant limitations.
+- Why: Better prose cannot justify an invented fact.
+
+## 8. Evidence notes
+
+Reviewed 2026-09-28. Editorial preferences must be grounded in the user's task and samples.
+- Anthropic, [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), living documentation: relevant examples and explicit context can guide tone and format; effects vary by model.
+- Anthropic, [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents), 2026-01-09: subjective rubrics require calibration; observable outcomes and stated criteria matter.
+- Anthropic, [Reasoning models do not always say what they think](https://www.anthropic.com/research/reasoning-models-dont-say-think), 2025-04-03: convincing explanations alone are not evidence of faithful reasoning. It does not validate this editorial scorecard.
