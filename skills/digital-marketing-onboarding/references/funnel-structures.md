@@ -2,6 +2,8 @@
 
 Use these as sketches, not page-by-page requirements. Omit steps that do not help the audience or business. For each retained step, specify its purpose, owner, input, output, permission or approval, and success measure. Do not imply results, scarcity, testimonials, or guarantees that have not been verified.
 
+For more variations, see the [historical structure catalog](funnel-structures-catalog.md). Its flows are examples to adapt, not default builds.
+
 ## Direct offer
 
 1. A relevant source introduces the problem and approved offer.

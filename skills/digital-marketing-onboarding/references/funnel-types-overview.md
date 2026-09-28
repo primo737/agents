@@ -13,3 +13,19 @@ These are planning patterns, not a required taxonomy or evidence that one path c
 | Serve existing customers | Onboarding → use/support → feedback → renewal or referral | Does the next step benefit the customer and fit the approved service? |
 
 Patterns can be combined, but do not assume a lead magnet, tripwire, webinar, upsell, application, retargeting audience, or multi-page sequence is necessary. Avoid using price bands alone to select a funnel. Test the path against actual audience behavior and delivery constraints. See [funnel structures](funnel-structures.md) for adaptable flow examples.
+
+## Named variations from the original library
+
+Use these names to locate a possible pattern, then inspect the actual customer path. The [historical catalog](funnel-structures-catalog.md) shows fuller page-flow examples; its flows are not validated recommendations.
+
+| Need | Variations to consider | What to verify |
+|---|---|---|
+| Direct lead capture | Squeeze page, lead magnet, quiz, survey | Is contact capture necessary? Can the promised result be delivered? |
+| Direct purchase | Product page, sales letter, video sales letter, e-commerce, storefront | Can the visitor evaluate terms, price, delivery, and support? |
+| Consultative sale | Application, coaching, consultant, live demo | Is qualification useful, and who handles the conversation? |
+| Time-bound event | Webinar, summit, live event, challenge, product launch | Are timing, capacity, content, reminders, and recording rights real? |
+| Ongoing access | Membership, subscription box, SaaS trial | Are billing, onboarding, renewal, and cancellation clear? |
+| Partner or affiliate path | Bridge, comparison, affiliate webinar | Are relationship, incentives, claims, and handoffs disclosed accurately? |
+| Return or retention | Follow-up, waitlist, cancellation, renewal | Does the message respect the person's prior choice and permissions? |
+
+Avoid selecting a structure only because its label sounds persuasive. Compare the simplest direct route against a more involved route, describe the extra value each step provides, and discard any step the client cannot deliver or measure.
