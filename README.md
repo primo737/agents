@@ -23,9 +23,9 @@ Claude will ask about your offer price, audience size, traffic source, and timel
 
 The dedicated routing skill is **`funnel-select`** — it runs a decision tree based on your offer price, traffic temperature, and goal, then points you to the right funnel skill to build pages.
 
-**Many skills have mandatory intake built in.** They won't generate output until you've answered their intake questions. For example:
+**Skills handle intake differently.** Some require full answers; others ask only what remains unclear. For example:
 - `blair-singer-intro` requires answers to 10 specific questions before writing a single line of your speaker intro
-- `halibut-instructional` runs a 13-question prompt-engineering intake before building your instruction set
+- `halibut-instructional` interviews when needed, with the full 13-question intake available on request
 - `launchmap-avatar` won't produce an avatar profile until you've gone through the three avatar exercises
 
 If a skill prompts you with questions — answer them. That's the intake phase, and the output quality depends on it.
@@ -540,9 +540,9 @@ Turn past AI Hour cohort transcripts into a facilitator playbook + Halibut-gener
 ---
 
 #### `halibut-instructional`
-Guide through creating powerful instructional prompts via a 13-question intake, then generate polished, human-sounding output free of detectable AI patterns.
+Clarify a brief and build a reusable prompt. When asked for a finished result, execute the authorized task and provide the prompt too.
 
-**Intake required:** This skill runs a 13-question intake (action, audience, tone, key points, avoid, structure, length, examples, emotional feel, creative vs factual, continuity, terminology, urgency). It asks 2–3 questions at a time, not all at once.
+**Interview:** Ask only for missing decisions. Use one question at a time by default; show the complete 13-question intake when explicitly requested. Preserve the user's facts, audience, language, and corrections across follow-ups.
 
 **Say:** _"help me write a prompt"_ · _"build me a prompt for X"_ · _"help me get better results from AI"_ · _"write a prompt that does X"_ · _"prompt engineer this"_
 
