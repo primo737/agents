@@ -20,6 +20,21 @@ Use these as an optional question bank, not a required questionnaire. Ask only w
 14. What does the prospect want most?
 15. What is the main obstacle to that result?
 
+## Follow-ups when the strategy needs them
+
+Ask only the applicable questions; do not treat this as a second mandatory questionnaire.
+
+- What parts of the offer, pricing, guarantees, claims, and proof are approved for public use?
+- How does an enquiry become a customer today, and where does the process stall?
+- Who owns responses, fulfilment, technical setup, budget, and final marketing approval?
+- What capacity, service area, delivery timing, or eligibility limits must the funnel respect?
+- Which customer data and creative assets may be used for marketing, and what is the source of that permission?
+- What is the primary outcome to measure, and which system is the source of truth for it?
+
+## Intake record
+
+For every consequential answer, record the question, the client's wording or verified source, interpretation, date, status, and owner of any follow-up. A missing baseline may remain unknown; do not invent a number to complete the form.
+
 ## Core Content record
 
 - Niche

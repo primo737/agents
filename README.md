@@ -584,7 +584,7 @@ Build, package, and price an irresistible offer using Alex Hormozi's $100M Offer
 ---
 
 #### `digital-marketing-onboarding`
-Build an evidence-led marketing intake and strategy for a new client or business. Scope discovery to the requested deliverable, keep client facts and approvals separate, and use audience, offer, funnel, follow-up, and measurement frameworks only where useful.
+Guide a new client through an evidence-led, eleven-area marketing onboarding, from intake and audience research through offer, funnel, follow-up, landing pages, and measurement. Each area has a concrete output and supporting reference; focused requests can use the relevant areas without a full onboarding gate.
 
 **Use when:** Onboarding a marketing client or developing their integrated marketing strategy. A standalone asset can use the relevant reference without requiring a full onboarding sequence.
 
