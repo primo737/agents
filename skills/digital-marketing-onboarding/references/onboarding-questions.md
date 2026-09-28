@@ -1,51 +1,35 @@
-# Client Intake Questionnaire
+# Marketing Client Intake Questions
 
-These 15 questions form the foundation of the Clarity Call. Ask them conversationally
-in batches, not all at once.
+Use these as an optional question bank, not a required questionnaire. Ask only what the requested deliverable needs, in conversational batches when an interview is requested. Capture the client's answer separately from your working interpretation and note its source and date where relevant.
 
-## Batch 1: Business Overview
+## Core clarity call
 
-**Q1.** Please take two minutes and give me a little background of your business and
-a brief overview of the products and services you offer.
+1. Give a brief background of the business and its products or services.
+2. What differentiates it from alternatives?
+3. In an ideal outcome, what should this work achieve?
+4. What is the core or flagship offer?
+5. What is the current price or pricing logic?
+6. How are traffic, leads, and customers currently generated?
+7. What traffic volume is currently available?
+8. How many new leads arrive each month?
+9. How many new customers arrive each month?
+10. Who is the current customer?
+11. Who is the ideal customer, if different?
+12. What proof, demonstration, or experience creates a meaningful "wow"?
+13. What would the business say or show in two minutes to earn attention?
+14. What does the prospect want most?
+15. What is the main obstacle to that result?
 
-**Q2.** What differentiates you from the competition? What's your "Unique Selling Point"?
+## Core Content record
 
-**Q3.** In a perfect world, what are you hoping we can accomplish together? What's YOUR
-desired end result?
+- Niche
+- Target audience
+- Supported outcome or proposed result
+- Timeframe, only if substantiated and relevant
+- Unique method
+- Verified proof or proof still needed
+- Origin story, only if relevant and supplied
 
-**Q4.** What is your core/flagship offering? What's the product or service that you're
-most proud to sell and deliver? What do you hope most people will buy from you?
+## Conditional operations supplement
 
-## Batch 2: Metrics & Traffic
-
-**Q5.** How much do you charge for this product/service?
-
-**Q6.** How are you currently generating the bulk of your traffic, leads, and customers?
-
-**Q7.** How much traffic do you get on a daily, weekly, or monthly basis?
-
-**Q8.** How many new leads are you adding each month?
-
-**Q9.** How many new customers are you adding each month?
-
-## Batch 3: Customer & Market
-
-**Q10.** Describe your current customer...
-
-**Q11.** Is this your IDEAL customer or just the one you're getting? If not, also
-describe your ideal customer.
-
-**Q12.** What's the one thing you can tell or show someone that will make them say "WOW!!"?
-
-**Q13.** If you had two minutes to impress someone, what would you say, show, or give
-them that would blow their mind?
-
-## Batch 4: Core Desires
-
-**Q14.** What's the one big thing your prospect wants more than anything else?
-(Examples: Drive the ball 20 yards further for golfers, lose 10 pounds in 10 days
-for dieters, generate 10 inbound calls a week for salespeople, free shipping for
-ecommerce, etc.)
-
-**Q15.** What's the one big thing that's keeping your customer from achieving their
-desired end result?
+If the client requires recurring client delivery, community/events, or sensitive-service coordination, also read [client-operations-community-psychosocial-intake.md](client-operations-community-psychosocial-intake.md).
