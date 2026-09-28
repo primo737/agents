@@ -583,6 +583,15 @@ Build, package, and price an irresistible offer using Alex Hormozi's $100M Offer
 
 ---
 
+#### `digital-marketing-onboarding`
+Build an evidence-led marketing intake and strategy for a new client or business. Scope discovery to the requested deliverable, keep client facts and approvals separate, and use audience, offer, funnel, follow-up, and measurement frameworks only where useful.
+
+**Use when:** Onboarding a marketing client or developing their integrated marketing strategy. A standalone asset can use the relevant reference without requiring a full onboarding sequence.
+
+**Say:** _"onboard this marketing client"_ · _"build the marketing strategy from this intake"_ · _"map the audience, offer, and funnel"_
+
+---
+
 #### `marketing-stack`
 Wire funnels to a GHL-centered stack (email, SMS, payments, CRM, workflows) via n8n on VPS. Covers Stripe integration, webhook plumbing, cross-tool automation.
 
@@ -612,7 +621,7 @@ These folders contain supporting materials used by agents during skill execution
 | `hr/` | E-Myth job creator for designing systemized roles and Position Contracts |
 | `strategy/` | RPM planning methodology, Product Launch Framework sequences, operations manual, CEO scorecard, transformational leadership framework |
 | `content/` | YouTube strategy, hook creation frameworks, title formulas, thumbnail scripts, video monetization playbooks |
-| `marketing/` | Brand kit templates, customer avatar exercises, funnel taxonomy, digital marketing onboarding, offer stack creation |
+| `marketing/` | Brand kit templates and legacy marketing reference links; digital marketing onboarding is maintained in `digital-marketing-onboarding/` |
 | `sales/` | Customer Value Journey copywriter, VSL wizard, sales letter templates and anatomy builder, 4-legged stool copy auditor |
 | `storytelling/` | Story extraction and analysis from speaking transcripts; preserves narrative voice for book chapters and stage placement |
 | `training/` | Mini-course creator, masterclass wizard, training program developer, instructional prompt guide, prompt engineering docs |

@@ -1,49 +1,17 @@
-# Core Content Template
+# Core content record
 
-These seven elements form the strategic foundation of all marketing messaging.
-Extract them from the Clarity Call answers.
+Use this record when positioning or a strategy document needs it. Fill each field from client input or verified evidence; leave unknowns explicit. Do not treat the record as a promise template.
 
-## Elements
+| Field | Record |
+|---|---|
+| Business and offer | What is actually sold and delivered |
+| Audience | Buyer, user, and other decision-makers where distinct |
+| Problem or desired outcome | In the audience's own verified terms if available |
+| Supported result | What the offer can reasonably claim, with source |
+| Method and differentiation | How the offer works and why it differs |
+| Price and service boundaries | Approved terms, exclusions, capacity |
+| Evidence | Source, date, relevance, and permissions for use |
+| Story | Verified origin or customer story only if relevant and authorized |
+| Open decisions | Owner and next action |
 
-**Niche** = The specific market segment the business operates in.
-Ask: "What industry/vertical are you in? Who do you primarily serve?"
-
-**Target Audience** = The specific person the product/service is for.
-Ask: "If you could only sell to one type of person, who would it be?"
-
-**Promised Result** = The specific, measurable outcome the customer gets.
-Ask: "What transformation or result does your customer achieve?"
-Good: "Lose 10 pounds in 30 days"
-Bad: "Feel better about yourself"
-
-**Timeframe** = How long it takes to achieve the promised result.
-Ask: "How quickly can someone expect to see results?"
-
-**Unique Method** = What makes the approach different from competitors.
-Ask: "What's different about HOW you deliver this result?"
-
-**Proof** = Evidence that the method works — case studies, data, testimonials, credentials.
-Ask: "What proof do you have that this actually works?"
-
-**Story** = The origin or transformation story that builds connection and credibility.
-Ask: "How did you discover this method? What's the story behind why you do this?"
-
-## Template Output
-
-```
-Niche = [NICHE]
-Target Audience = [AUDIENCE]
-Promised Result = [PROMISE]
-Timeframe = [TIMEFRAME]
-Unique Method = [METHOD]
-Proof = [PROOF]
-Story = [STORY]
-```
-
-## How These Elements Connect
-
-The Core Content feeds directly into:
-- **Statement of Value** (Step 4): Combines audience + result + method + timeframe
-- **Landing Page Headlines** (Step 10): Lead with promised result
-- **Email Sequences** (Step 9): Story becomes the soap opera sequence foundation
-- **Ad Copy** (Step 11): Proof becomes the credibility element in retargeting
+A clear draft might say: “For small service teams handling recurring enquiries, the scheduling service provides a shared intake and booking workflow.” Add performance claims or timeframes only with suitable evidence and approval.
